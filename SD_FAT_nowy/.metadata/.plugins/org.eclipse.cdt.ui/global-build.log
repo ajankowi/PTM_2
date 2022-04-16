@@ -1,0 +1,3532 @@
+00:30:19 **** Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../HD44780.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HD44780.d" -MT"HD44780.o" -c -o "HD44780.o" "../HD44780.c"
+Finished building: ../HD44780.c
+ 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:31:50 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:32:06 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:32:39 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:32:59 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:34:40 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../cfc_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"cfc_avr.d" -MT"cfc_avr.o" -c -o "cfc_avr.o" "../cfc_avr.c"
+Finished building: ../cfc_avr.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:35:19 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:36:11 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:37:55 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../cfc_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"cfc_avr.d" -MT"cfc_avr.o" -c -o "cfc_avr.o" "../cfc_avr.c"
+../cfc_avr.c:67: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Stat'
+../cfc_avr.c:69: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Timer'
+../cfc_avr.c:74: error: expected ')' before 'ms'
+../cfc_avr.c: In function 'power_on':
+../cfc_avr.c:103: warning: implicit declaration of function 'delay_ms'
+../cfc_avr.c: In function 'power_off':
+../cfc_avr.c:111: error: 'Stat' undeclared (first use in this function)
+../cfc_avr.c:111: error: (Each undeclared identifier is reported only once
+../cfc_avr.c:111: error: for each function it appears in.)
+../cfc_avr.c:111: error: 'STA_NOINIT' undeclared (first use in this function)
+../cfc_avr.c: At top level:
+../cfc_avr.c:126: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'read_ata'
+../cfc_avr.c:144: error: expected ')' before '*' token
+../cfc_avr.c:177: error: expected ')' before '*' token
+../cfc_avr.c:210: error: expected ')' before 'reg'
+../cfc_avr.c:227: warning: type defaults to 'int' in declaration of 'BYTE'
+../cfc_avr.c:227: error: expected ';', ',' or ')' before '*' token
+../cfc_avr.c:259: error: expected ')' before 'ms'
+../cfc_avr.c:284: error: expected ')' before 'cmd'
+../cfc_avr.c:315: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'cf_disk_initialize'
+../cfc_avr.c:352: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'cf_disk_status'
+../cfc_avr.c:363: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'cf_disk_read'
+../cfc_avr.c:397: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'cf_disk_write'
+../cfc_avr.c: In function 'cf_disk_timerproc':
+../cfc_avr.c:500: error: 'UINT' undeclared (first use in this function)
+../cfc_avr.c:500: error: expected ';' before 't'
+../cfc_avr.c:503: error: 't' undeclared (first use in this function)
+../cfc_avr.c:503: error: 'Timer' undeclared (first use in this function)
+../cfc_avr.c:507: error: 'Stat' undeclared (first use in this function)
+../cfc_avr.c:507: error: 'STA_NODISK' undeclared (first use in this function)
+../cfc_avr.c:509: error: 'STA_NOINIT' undeclared (first use in this function)
+make: *** [cfc_avr.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:38:03 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../cfc_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"cfc_avr.d" -MT"cfc_avr.o" -c -o "cfc_avr.o" "../cfc_avr.c"
+../cfc_avr.c:67: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Stat'
+../cfc_avr.c:69: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Timer'
+../cfc_avr.c:74: error: expected ')' before 'ms'
+../cfc_avr.c: In function 'power_on':
+../cfc_avr.c:103: warning: implicit declaration of function 'delay_ms'
+../cfc_avr.c: In function 'power_off':
+../cfc_avr.c:111: error: 'Stat' undeclared (first use in this function)
+../cfc_avr.c:111: error: (Each undeclared identifier is reported only once
+../cfc_avr.c:111: error: for each function it appears in.)
+../cfc_avr.c:111: error: 'STA_NOINIT' undeclared (first use in this function)
+../cfc_avr.c: At top level:
+../cfc_avr.c:126: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'read_ata'
+../cfc_avr.c:144: error: expected ')' before '*' token
+../cfc_avr.c:177: error: expected ')' before '*' token
+../cfc_avr.c:210: error: expected ')' before 'reg'
+../cfc_avr.c:227: warning: type defaults to 'int' in declaration of 'BYTE'
+../cfc_avr.c:227: error: expected ';', ',' or ')' before '*' token
+../cfc_avr.c:259: error: expected ')' before 'ms'
+../cfc_avr.c:284: error: expected ')' before 'cmd'
+../cfc_avr.c:315: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'cf_disk_initialize'
+../cfc_avr.c:352: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'cf_disk_status'
+../cfc_avr.c:363: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'cf_disk_read'
+../cfc_avr.c:397: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'cf_disk_write'
+../cfc_avr.c: In function 'cf_disk_timerproc':
+../cfc_avr.c:500: error: 'UINT' undeclared (first use in this function)
+../cfc_avr.c:500: error: expected ';' before 't'
+../cfc_avr.c:503: error: 't' undeclared (first use in this function)
+../cfc_avr.c:503: error: 'Timer' undeclared (first use in this function)
+../cfc_avr.c:507: error: 'Stat' undeclared (first use in this function)
+../cfc_avr.c:507: error: 'STA_NODISK' undeclared (first use in this function)
+../cfc_avr.c:509: error: 'STA_NOINIT' undeclared (first use in this function)
+make: *** [cfc_avr.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:38:09 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../cfc_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"cfc_avr.d" -MT"cfc_avr.o" -c -o "cfc_avr.o" "../cfc_avr.c"
+Finished building: ../cfc_avr.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:38:34 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o   
+./diskio.o: In function `disk_timerproc':
+diskio.c:(.text.disk_timerproc+0x0): undefined reference to `mmc_disk_timerproc'
+./diskio.o: In function `disk_ioctl':
+diskio.c:(.text.disk_ioctl+0xc): undefined reference to `mmc_disk_ioctl'
+./diskio.o: In function `disk_write':
+diskio.c:(.text.disk_write+0x14): undefined reference to `mmc_disk_write'
+./diskio.o: In function `disk_read':
+diskio.c:(.text.disk_read+0x14): undefined reference to `mmc_disk_read'
+./diskio.o: In function `disk_initialize':
+diskio.c:(.text.disk_initialize+0x8): undefined reference to `mmc_disk_initialize'
+./diskio.o: In function `disk_status':
+diskio.c:(.text.disk_status+0x8): undefined reference to `mmc_disk_status'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:41:38 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../HD44780.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HD44780.d" -MT"HD44780.o" -c -o "HD44780.o" "../HD44780.c"
+Finished building: ../HD44780.c
+ 
+Building file: ../cfc_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"cfc_avr.d" -MT"cfc_avr.o" -c -o "cfc_avr.o" "../cfc_avr.c"
+Finished building: ../cfc_avr.c
+ 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   28678 bytes (87.5% Full)
+(.text + .data + .bootloader)
+
+Data:        978 bytes (47.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:43:04 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   28678 bytes (87.5% Full)
+(.text + .data + .bootloader)
+
+Data:        978 bytes (47.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:43:27 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   28822 bytes (88.0% Full)
+(.text + .data + .bootloader)
+
+Data:       1004 bytes (49.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:43:51 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   28822 bytes (88.0% Full)
+(.text + .data + .bootloader)
+
+Data:       1004 bytes (49.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:44:30 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   28822 bytes (88.0% Full)
+(.text + .data + .bootloader)
+
+Data:       1004 bytes (49.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:50:19 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   28700 bytes (87.6% Full)
+(.text + .data + .bootloader)
+
+Data:        986 bytes (48.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:50:43 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   28700 bytes (87.6% Full)
+(.text + .data + .bootloader)
+
+Data:        986 bytes (48.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:53:31 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./cfc_avr.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   28700 bytes (87.6% Full)
+(.text + .data + .bootloader)
+
+Data:        986 bytes (48.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:53:46 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   27340 bytes (83.4% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:53:56 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   27340 bytes (83.4% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:57:02 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   27340 bytes (83.4% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:57:46 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'scan_files':
+../main.c:80: warning: implicit declaration of function 'f_readdir'
+../main.c: At top level:
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   27340 bytes (83.4% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:11 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   27340 bytes (83.4% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:15 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   27216 bytes (83.1% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:59:04 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   27216 bytes (83.1% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:59:29 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   27216 bytes (83.1% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:00:05 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   26794 bytes (81.8% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:01:08 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   26650 bytes (81.3% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:02:38 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   26036 bytes (79.5% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:03:21 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   26036 bytes (79.5% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:07:20 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+../ff.c:2544: warning: 'dir_remove' defined but not used
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   25694 bytes (78.4% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:08:12 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   25694 bytes (78.4% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:09:25 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   25482 bytes (77.8% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:09:30 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   25482 bytes (77.8% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:10:04 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   25316 bytes (77.3% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:10:24 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   25270 bytes (77.1% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:11:08 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   24630 bytes (75.2% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:11:11 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   24630 bytes (75.2% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:11:47 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   24084 bytes (73.5% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:12:20 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   24084 bytes (73.5% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:12:42 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+../ff.c:2280: warning: 'dir_read' defined but not used
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   23090 bytes (70.5% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:13:29 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   23090 bytes (70.5% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:14:09 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   23090 bytes (70.5% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:16:11 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   23090 bytes (70.5% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:17:01 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   23090 bytes (70.5% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:17:18 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   23090 bytes (70.5% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:21:18 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   23090 bytes (70.5% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:21:20 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   23090 bytes (70.5% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:29 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   22096 bytes (67.4% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:56 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   21752 bytes (66.4% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:23:04 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   21752 bytes (66.4% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:23:42 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   21578 bytes (65.9% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:23:46 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   21578 bytes (65.9% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:47 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   21578 bytes (65.9% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:56 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   21578 bytes (65.9% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:25:15 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   21578 bytes (65.9% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:28:00 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   21578 bytes (65.9% Full)
+(.text + .data + .bootloader)
+
+Data:        966 bytes (47.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:28:54 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+../ff.c:4208: warning: 'create_partition' defined but not used
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:29:35 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:29:52 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:32:12 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:32:17 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:33:33 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:33:44 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:37:42 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:37:51 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:41:23 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+../ff.c: In function 'sync_fs':
+../ff.c:1101: warning: implicit declaration of function 'disk_ioctl'
+Finished building: ../ff.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+./ff.o: In function `f_sync':
+ff.c:(.text.f_sync+0x1b2): undefined reference to `disk_ioctl'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:42:55 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:22:53 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:22:55 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:58:47 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:59:04 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:59:30 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:59:30 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:02:24 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:91: warning: implicit declaration of function 'ioinit'
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+./main.o: In function `main':
+main.c:(.text.main+0x2c): undefined reference to `ioinit'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:02:30 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16816 bytes (51.3% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:02:44 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16816 bytes (51.3% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:04:27 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16816 bytes (51.3% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:04:34 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:08:02 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:11:58 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:17:11 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:18:10 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:19:14 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16924 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:17:32 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:93: warning: implicit declaration of function 'ioinit'
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+../mmc_avr_spi.c: In function 'ioinit':
+../mmc_avr_spi.c:668: warning: implicit declaration of function 'sei'
+../mmc_avr_spi.c: At top level:
+../mmc_avr_spi.c:663: warning: 'ioinit' defined but not used
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+./main.o: In function `main':
+main.c:(.text.main+0x2c): undefined reference to `ioinit'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:17:53 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+../mmc_avr_spi.c: In function 'ioinit':
+../mmc_avr_spi.c:668: warning: implicit declaration of function 'sei'
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+./mmc_avr_spi.o: In function `ioinit':
+mmc_avr_spi.c:(.text.ioinit+0x10): undefined reference to `sei'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:18:08 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+../mmc_avr_spi.c: In function 'ioinit':
+../mmc_avr_spi.c:668: warning: implicit declaration of function 'sei'
+../mmc_avr_spi.c: At top level:
+../mmc_avr_spi.c:672: warning: return type defaults to 'int'
+../mmc_avr_spi.c: In function 'ISR':
+../mmc_avr_spi.c:672: warning: type of 'TIMER2_COMP_VECTOR' defaults to 'int'
+../mmc_avr_spi.c:673: error: 'Timer' undeclared (first use in this function)
+../mmc_avr_spi.c:673: error: (Each undeclared identifier is reported only once
+../mmc_avr_spi.c:673: error: for each function it appears in.)
+make: *** [mmc_avr_spi.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:18:44 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+../mmc_avr_spi.c: In function 'ioinit':
+../mmc_avr_spi.c:669: warning: implicit declaration of function 'sei'
+../mmc_avr_spi.c: At top level:
+../mmc_avr_spi.c:673: warning: return type defaults to 'int'
+../mmc_avr_spi.c: In function 'ISR':
+../mmc_avr_spi.c:673: warning: type of 'TIMER2_COMP_VECTOR' defaults to 'int'
+../mmc_avr_spi.c:676: warning: control reaches end of non-void function
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+./mmc_avr_spi.o: In function `ioinit':
+mmc_avr_spi.c:(.text.ioinit+0x10): undefined reference to `sei'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:19:22 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16932 bytes (51.7% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:19:59 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16920 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:20:09 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16920 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:22:15 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:102: warning: implicit declaration of function 'ioinit'
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+./main.o: In function `main':
+main.c:(.text.main+0x2c): undefined reference to `ioinit'
+make: *** [SD_gotowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:22:20 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16802 bytes (51.3% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:22:53 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16802 bytes (51.3% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:23:37 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16920 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:24:02 **** Incremental Build of configuration Release for project SD_gotowy ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_gotowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_gotowy.map -mmcu=atmega32 -o "SD_gotowy.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_gotowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_gotowy.elf  >"SD_gotowy.lss"
+Finished building: SD_gotowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_gotowy.elf  "SD_gotowy.hex"
+Finished building: SD_gotowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_gotowy.elf  "SD_gotowy.eep"
+Finished building: SD_gotowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_gotowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16932 bytes (51.7% Full)
+(.text + .data + .bootloader)
+
+Data:        876 bytes (42.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

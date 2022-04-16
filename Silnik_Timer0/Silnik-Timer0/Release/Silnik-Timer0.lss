@@ -1,0 +1,598 @@
+
+Silnik-Timer0.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000004f8  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000001  00800060  00800060  0000056c  2**0
+                  ALLOC
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   8:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  10:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  14:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  18:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  1c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  20:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  24:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  28:	0c 94 2b 02 	jmp	0x456	; 0x456 <__vector_10>
+  2c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  30:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  34:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  38:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  3c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  40:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  44:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  48:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  4c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  50:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_clear_bss>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	01 c0       	rjmp	.+2      	; 0x6a <.do_clear_bss_start>
+
+00000068 <.do_clear_bss_loop>:
+  68:	1d 92       	st	X+, r1
+
+0000006a <.do_clear_bss_start>:
+  6a:	a1 36       	cpi	r26, 0x61	; 97
+  6c:	b1 07       	cpc	r27, r17
+  6e:	e1 f7       	brne	.-8      	; 0x68 <.do_clear_bss_loop>
+  70:	0e 94 3c 02 	call	0x478	; 0x478 <main>
+  74:	0c 94 7a 02 	jmp	0x4f4	; 0x4f4 <_exit>
+
+00000078 <__bad_interrupt>:
+  78:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000007c <TimerInit>:
+  7c:	83 b7       	in	r24, 0x33	; 51
+  7e:	88 60       	ori	r24, 0x08	; 8
+  80:	83 bf       	out	0x33, r24	; 51
+  82:	83 b7       	in	r24, 0x33	; 51
+  84:	84 60       	ori	r24, 0x04	; 4
+  86:	83 bf       	out	0x33, r24	; 51
+  88:	8b e4       	ldi	r24, 0x4B	; 75
+  8a:	8c bf       	out	0x3c, r24	; 60
+  8c:	80 e8       	ldi	r24, 0x80	; 128
+  8e:	8f bf       	out	0x3f, r24	; 63
+  90:	89 b7       	in	r24, 0x39	; 57
+  92:	82 60       	ori	r24, 0x02	; 2
+  94:	89 bf       	out	0x39, r24	; 57
+  96:	08 95       	ret
+
+00000098 <half_step_motor_left>:
+  98:	cf 92       	push	r12
+  9a:	df 92       	push	r13
+  9c:	ef 92       	push	r14
+  9e:	ff 92       	push	r15
+  a0:	1f 93       	push	r17
+  a2:	6b 01       	movw	r12, r22
+  a4:	7c 01       	movw	r14, r24
+  a6:	14 2f       	mov	r17, r20
+  a8:	0e 94 3e 00 	call	0x7c	; 0x7c <TimerInit>
+  ac:	78 94       	sei
+  ae:	11 30       	cpi	r17, 0x01	; 1
+  b0:	09 f0       	breq	.+2      	; 0xb4 <half_step_motor_left+0x1c>
+  b2:	41 c0       	rjmp	.+130    	; 0x136 <half_step_motor_left+0x9e>
+  b4:	8b 9a       	sbi	0x11, 3	; 17
+  b6:	8a 9a       	sbi	0x11, 2	; 17
+  b8:	89 9a       	sbi	0x11, 1	; 17
+  ba:	88 9a       	sbi	0x11, 0	; 17
+  bc:	21 e0       	ldi	r18, 0x01	; 1
+  be:	30 e0       	ldi	r19, 0x00	; 0
+  c0:	40 e0       	ldi	r20, 0x00	; 0
+  c2:	50 e0       	ldi	r21, 0x00	; 0
+  c4:	32 c0       	rjmp	.+100    	; 0x12a <half_step_motor_left+0x92>
+  c6:	80 91 60 00 	lds	r24, 0x0060
+  ca:	88 23       	and	r24, r24
+  cc:	09 f4       	brne	.+2      	; 0xd0 <half_step_motor_left+0x38>
+  ce:	90 98       	cbi	0x12, 0	; 18
+  d0:	80 91 60 00 	lds	r24, 0x0060
+  d4:	81 30       	cpi	r24, 0x01	; 1
+  d6:	09 f4       	brne	.+2      	; 0xda <half_step_motor_left+0x42>
+  d8:	92 9a       	sbi	0x12, 2	; 18
+  da:	80 91 60 00 	lds	r24, 0x0060
+  de:	82 30       	cpi	r24, 0x02	; 2
+  e0:	09 f4       	brne	.+2      	; 0xe4 <half_step_motor_left+0x4c>
+  e2:	93 98       	cbi	0x12, 3	; 18
+  e4:	80 91 60 00 	lds	r24, 0x0060
+  e8:	83 30       	cpi	r24, 0x03	; 3
+  ea:	09 f4       	brne	.+2      	; 0xee <half_step_motor_left+0x56>
+  ec:	91 9a       	sbi	0x12, 1	; 18
+  ee:	80 91 60 00 	lds	r24, 0x0060
+  f2:	84 30       	cpi	r24, 0x04	; 4
+  f4:	09 f4       	brne	.+2      	; 0xf8 <half_step_motor_left+0x60>
+  f6:	92 98       	cbi	0x12, 2	; 18
+  f8:	80 91 60 00 	lds	r24, 0x0060
+  fc:	85 30       	cpi	r24, 0x05	; 5
+  fe:	09 f4       	brne	.+2      	; 0x102 <half_step_motor_left+0x6a>
+ 100:	90 9a       	sbi	0x12, 0	; 18
+ 102:	80 91 60 00 	lds	r24, 0x0060
+ 106:	86 30       	cpi	r24, 0x06	; 6
+ 108:	09 f4       	brne	.+2      	; 0x10c <half_step_motor_left+0x74>
+ 10a:	91 98       	cbi	0x12, 1	; 18
+ 10c:	80 91 60 00 	lds	r24, 0x0060
+ 110:	87 30       	cpi	r24, 0x07	; 7
+ 112:	09 f4       	brne	.+2      	; 0x116 <half_step_motor_left+0x7e>
+ 114:	93 9a       	sbi	0x12, 3	; 18
+ 116:	80 91 60 00 	lds	r24, 0x0060
+ 11a:	88 30       	cpi	r24, 0x08	; 8
+ 11c:	a0 f2       	brcs	.-88     	; 0xc6 <half_step_motor_left+0x2e>
+ 11e:	10 92 60 00 	sts	0x0060, r1
+ 122:	2f 5f       	subi	r18, 0xFF	; 255
+ 124:	3f 4f       	sbci	r19, 0xFF	; 255
+ 126:	4f 4f       	sbci	r20, 0xFF	; 255
+ 128:	5f 4f       	sbci	r21, 0xFF	; 255
+ 12a:	c2 16       	cp	r12, r18
+ 12c:	d3 06       	cpc	r13, r19
+ 12e:	e4 06       	cpc	r14, r20
+ 130:	f5 06       	cpc	r15, r21
+ 132:	48 f6       	brcc	.-110    	; 0xc6 <half_step_motor_left+0x2e>
+ 134:	43 c0       	rjmp	.+134    	; 0x1bc <half_step_motor_left+0x124>
+ 136:	12 30       	cpi	r17, 0x02	; 2
+ 138:	09 f0       	breq	.+2      	; 0x13c <half_step_motor_left+0xa4>
+ 13a:	40 c0       	rjmp	.+128    	; 0x1bc <half_step_motor_left+0x124>
+ 13c:	8f 9a       	sbi	0x11, 7	; 17
+ 13e:	8e 9a       	sbi	0x11, 6	; 17
+ 140:	8d 9a       	sbi	0x11, 5	; 17
+ 142:	8c 9a       	sbi	0x11, 4	; 17
+ 144:	21 e0       	ldi	r18, 0x01	; 1
+ 146:	30 e0       	ldi	r19, 0x00	; 0
+ 148:	40 e0       	ldi	r20, 0x00	; 0
+ 14a:	50 e0       	ldi	r21, 0x00	; 0
+ 14c:	32 c0       	rjmp	.+100    	; 0x1b2 <half_step_motor_left+0x11a>
+ 14e:	80 91 60 00 	lds	r24, 0x0060
+ 152:	88 23       	and	r24, r24
+ 154:	09 f4       	brne	.+2      	; 0x158 <half_step_motor_left+0xc0>
+ 156:	94 98       	cbi	0x12, 4	; 18
+ 158:	80 91 60 00 	lds	r24, 0x0060
+ 15c:	81 30       	cpi	r24, 0x01	; 1
+ 15e:	09 f4       	brne	.+2      	; 0x162 <half_step_motor_left+0xca>
+ 160:	96 9a       	sbi	0x12, 6	; 18
+ 162:	80 91 60 00 	lds	r24, 0x0060
+ 166:	82 30       	cpi	r24, 0x02	; 2
+ 168:	09 f4       	brne	.+2      	; 0x16c <half_step_motor_left+0xd4>
+ 16a:	97 98       	cbi	0x12, 7	; 18
+ 16c:	80 91 60 00 	lds	r24, 0x0060
+ 170:	83 30       	cpi	r24, 0x03	; 3
+ 172:	09 f4       	brne	.+2      	; 0x176 <half_step_motor_left+0xde>
+ 174:	95 9a       	sbi	0x12, 5	; 18
+ 176:	80 91 60 00 	lds	r24, 0x0060
+ 17a:	84 30       	cpi	r24, 0x04	; 4
+ 17c:	09 f4       	brne	.+2      	; 0x180 <half_step_motor_left+0xe8>
+ 17e:	96 98       	cbi	0x12, 6	; 18
+ 180:	80 91 60 00 	lds	r24, 0x0060
+ 184:	85 30       	cpi	r24, 0x05	; 5
+ 186:	09 f4       	brne	.+2      	; 0x18a <half_step_motor_left+0xf2>
+ 188:	94 9a       	sbi	0x12, 4	; 18
+ 18a:	80 91 60 00 	lds	r24, 0x0060
+ 18e:	86 30       	cpi	r24, 0x06	; 6
+ 190:	09 f4       	brne	.+2      	; 0x194 <half_step_motor_left+0xfc>
+ 192:	95 98       	cbi	0x12, 5	; 18
+ 194:	80 91 60 00 	lds	r24, 0x0060
+ 198:	87 30       	cpi	r24, 0x07	; 7
+ 19a:	09 f4       	brne	.+2      	; 0x19e <half_step_motor_left+0x106>
+ 19c:	97 9a       	sbi	0x12, 7	; 18
+ 19e:	80 91 60 00 	lds	r24, 0x0060
+ 1a2:	88 30       	cpi	r24, 0x08	; 8
+ 1a4:	a0 f2       	brcs	.-88     	; 0x14e <half_step_motor_left+0xb6>
+ 1a6:	10 92 60 00 	sts	0x0060, r1
+ 1aa:	2f 5f       	subi	r18, 0xFF	; 255
+ 1ac:	3f 4f       	sbci	r19, 0xFF	; 255
+ 1ae:	4f 4f       	sbci	r20, 0xFF	; 255
+ 1b0:	5f 4f       	sbci	r21, 0xFF	; 255
+ 1b2:	c2 16       	cp	r12, r18
+ 1b4:	d3 06       	cpc	r13, r19
+ 1b6:	e4 06       	cpc	r14, r20
+ 1b8:	f5 06       	cpc	r15, r21
+ 1ba:	48 f6       	brcc	.-110    	; 0x14e <half_step_motor_left+0xb6>
+ 1bc:	1f 91       	pop	r17
+ 1be:	ff 90       	pop	r15
+ 1c0:	ef 90       	pop	r14
+ 1c2:	df 90       	pop	r13
+ 1c4:	cf 90       	pop	r12
+ 1c6:	08 95       	ret
+
+000001c8 <half_step_motor_right>:
+ 1c8:	cf 92       	push	r12
+ 1ca:	df 92       	push	r13
+ 1cc:	ef 92       	push	r14
+ 1ce:	ff 92       	push	r15
+ 1d0:	1f 93       	push	r17
+ 1d2:	6b 01       	movw	r12, r22
+ 1d4:	7c 01       	movw	r14, r24
+ 1d6:	14 2f       	mov	r17, r20
+ 1d8:	0e 94 3e 00 	call	0x7c	; 0x7c <TimerInit>
+ 1dc:	78 94       	sei
+ 1de:	11 30       	cpi	r17, 0x01	; 1
+ 1e0:	09 f0       	breq	.+2      	; 0x1e4 <half_step_motor_right+0x1c>
+ 1e2:	40 c0       	rjmp	.+128    	; 0x264 <half_step_motor_right+0x9c>
+ 1e4:	8b 9a       	sbi	0x11, 3	; 17
+ 1e6:	8a 9a       	sbi	0x11, 2	; 17
+ 1e8:	89 9a       	sbi	0x11, 1	; 17
+ 1ea:	88 9a       	sbi	0x11, 0	; 17
+ 1ec:	20 e0       	ldi	r18, 0x00	; 0
+ 1ee:	30 e0       	ldi	r19, 0x00	; 0
+ 1f0:	40 e0       	ldi	r20, 0x00	; 0
+ 1f2:	50 e0       	ldi	r21, 0x00	; 0
+ 1f4:	80 91 60 00 	lds	r24, 0x0060
+ 1f8:	88 23       	and	r24, r24
+ 1fa:	09 f4       	brne	.+2      	; 0x1fe <half_step_motor_right+0x36>
+ 1fc:	93 98       	cbi	0x12, 3	; 18
+ 1fe:	80 91 60 00 	lds	r24, 0x0060
+ 202:	81 30       	cpi	r24, 0x01	; 1
+ 204:	09 f4       	brne	.+2      	; 0x208 <half_step_motor_right+0x40>
+ 206:	91 9a       	sbi	0x12, 1	; 18
+ 208:	80 91 60 00 	lds	r24, 0x0060
+ 20c:	82 30       	cpi	r24, 0x02	; 2
+ 20e:	09 f4       	brne	.+2      	; 0x212 <half_step_motor_right+0x4a>
+ 210:	90 98       	cbi	0x12, 0	; 18
+ 212:	80 91 60 00 	lds	r24, 0x0060
+ 216:	83 30       	cpi	r24, 0x03	; 3
+ 218:	09 f4       	brne	.+2      	; 0x21c <half_step_motor_right+0x54>
+ 21a:	92 9a       	sbi	0x12, 2	; 18
+ 21c:	80 91 60 00 	lds	r24, 0x0060
+ 220:	84 30       	cpi	r24, 0x04	; 4
+ 222:	09 f4       	brne	.+2      	; 0x226 <half_step_motor_right+0x5e>
+ 224:	91 98       	cbi	0x12, 1	; 18
+ 226:	80 91 60 00 	lds	r24, 0x0060
+ 22a:	85 30       	cpi	r24, 0x05	; 5
+ 22c:	09 f4       	brne	.+2      	; 0x230 <half_step_motor_right+0x68>
+ 22e:	93 9a       	sbi	0x12, 3	; 18
+ 230:	80 91 60 00 	lds	r24, 0x0060
+ 234:	86 30       	cpi	r24, 0x06	; 6
+ 236:	09 f4       	brne	.+2      	; 0x23a <half_step_motor_right+0x72>
+ 238:	92 98       	cbi	0x12, 2	; 18
+ 23a:	80 91 60 00 	lds	r24, 0x0060
+ 23e:	87 30       	cpi	r24, 0x07	; 7
+ 240:	09 f4       	brne	.+2      	; 0x244 <half_step_motor_right+0x7c>
+ 242:	90 9a       	sbi	0x12, 0	; 18
+ 244:	80 91 60 00 	lds	r24, 0x0060
+ 248:	88 30       	cpi	r24, 0x08	; 8
+ 24a:	a1 f6       	brne	.-88     	; 0x1f4 <half_step_motor_right+0x2c>
+ 24c:	10 92 60 00 	sts	0x0060, r1
+ 250:	2f 5f       	subi	r18, 0xFF	; 255
+ 252:	3f 4f       	sbci	r19, 0xFF	; 255
+ 254:	4f 4f       	sbci	r20, 0xFF	; 255
+ 256:	5f 4f       	sbci	r21, 0xFF	; 255
+ 258:	c2 16       	cp	r12, r18
+ 25a:	d3 06       	cpc	r13, r19
+ 25c:	e4 06       	cpc	r14, r20
+ 25e:	f5 06       	cpc	r15, r21
+ 260:	48 f6       	brcc	.-110    	; 0x1f4 <half_step_motor_right+0x2c>
+ 262:	42 c0       	rjmp	.+132    	; 0x2e8 <half_step_motor_right+0x120>
+ 264:	12 30       	cpi	r17, 0x02	; 2
+ 266:	09 f0       	breq	.+2      	; 0x26a <half_step_motor_right+0xa2>
+ 268:	3f c0       	rjmp	.+126    	; 0x2e8 <half_step_motor_right+0x120>
+ 26a:	8f 9a       	sbi	0x11, 7	; 17
+ 26c:	8e 9a       	sbi	0x11, 6	; 17
+ 26e:	8d 9a       	sbi	0x11, 5	; 17
+ 270:	8c 9a       	sbi	0x11, 4	; 17
+ 272:	20 e0       	ldi	r18, 0x00	; 0
+ 274:	30 e0       	ldi	r19, 0x00	; 0
+ 276:	40 e0       	ldi	r20, 0x00	; 0
+ 278:	50 e0       	ldi	r21, 0x00	; 0
+ 27a:	80 91 60 00 	lds	r24, 0x0060
+ 27e:	88 23       	and	r24, r24
+ 280:	09 f4       	brne	.+2      	; 0x284 <half_step_motor_right+0xbc>
+ 282:	97 98       	cbi	0x12, 7	; 18
+ 284:	80 91 60 00 	lds	r24, 0x0060
+ 288:	81 30       	cpi	r24, 0x01	; 1
+ 28a:	09 f4       	brne	.+2      	; 0x28e <half_step_motor_right+0xc6>
+ 28c:	95 9a       	sbi	0x12, 5	; 18
+ 28e:	80 91 60 00 	lds	r24, 0x0060
+ 292:	82 30       	cpi	r24, 0x02	; 2
+ 294:	09 f4       	brne	.+2      	; 0x298 <half_step_motor_right+0xd0>
+ 296:	94 98       	cbi	0x12, 4	; 18
+ 298:	80 91 60 00 	lds	r24, 0x0060
+ 29c:	83 30       	cpi	r24, 0x03	; 3
+ 29e:	09 f4       	brne	.+2      	; 0x2a2 <half_step_motor_right+0xda>
+ 2a0:	96 9a       	sbi	0x12, 6	; 18
+ 2a2:	80 91 60 00 	lds	r24, 0x0060
+ 2a6:	84 30       	cpi	r24, 0x04	; 4
+ 2a8:	09 f4       	brne	.+2      	; 0x2ac <half_step_motor_right+0xe4>
+ 2aa:	95 98       	cbi	0x12, 5	; 18
+ 2ac:	80 91 60 00 	lds	r24, 0x0060
+ 2b0:	85 30       	cpi	r24, 0x05	; 5
+ 2b2:	09 f4       	brne	.+2      	; 0x2b6 <half_step_motor_right+0xee>
+ 2b4:	97 9a       	sbi	0x12, 7	; 18
+ 2b6:	80 91 60 00 	lds	r24, 0x0060
+ 2ba:	86 30       	cpi	r24, 0x06	; 6
+ 2bc:	09 f4       	brne	.+2      	; 0x2c0 <half_step_motor_right+0xf8>
+ 2be:	96 98       	cbi	0x12, 6	; 18
+ 2c0:	80 91 60 00 	lds	r24, 0x0060
+ 2c4:	87 30       	cpi	r24, 0x07	; 7
+ 2c6:	09 f4       	brne	.+2      	; 0x2ca <half_step_motor_right+0x102>
+ 2c8:	94 9a       	sbi	0x12, 4	; 18
+ 2ca:	80 91 60 00 	lds	r24, 0x0060
+ 2ce:	88 30       	cpi	r24, 0x08	; 8
+ 2d0:	a1 f6       	brne	.-88     	; 0x27a <half_step_motor_right+0xb2>
+ 2d2:	10 92 60 00 	sts	0x0060, r1
+ 2d6:	2f 5f       	subi	r18, 0xFF	; 255
+ 2d8:	3f 4f       	sbci	r19, 0xFF	; 255
+ 2da:	4f 4f       	sbci	r20, 0xFF	; 255
+ 2dc:	5f 4f       	sbci	r21, 0xFF	; 255
+ 2de:	c2 16       	cp	r12, r18
+ 2e0:	d3 06       	cpc	r13, r19
+ 2e2:	e4 06       	cpc	r14, r20
+ 2e4:	f5 06       	cpc	r15, r21
+ 2e6:	48 f6       	brcc	.-110    	; 0x27a <half_step_motor_right+0xb2>
+ 2e8:	1f 91       	pop	r17
+ 2ea:	ff 90       	pop	r15
+ 2ec:	ef 90       	pop	r14
+ 2ee:	df 90       	pop	r13
+ 2f0:	cf 90       	pop	r12
+ 2f2:	08 95       	ret
+
+000002f4 <full_step_motor_left>:
+ 2f4:	ef 92       	push	r14
+ 2f6:	ff 92       	push	r15
+ 2f8:	0f 93       	push	r16
+ 2fa:	1f 93       	push	r17
+ 2fc:	7b 01       	movw	r14, r22
+ 2fe:	8c 01       	movw	r16, r24
+ 300:	0e 94 3e 00 	call	0x7c	; 0x7c <TimerInit>
+ 304:	78 94       	sei
+ 306:	d0 9a       	sbi	0x1a, 0	; 26
+ 308:	d1 9a       	sbi	0x1a, 1	; 26
+ 30a:	d2 9a       	sbi	0x1a, 2	; 26
+ 30c:	d3 9a       	sbi	0x1a, 3	; 26
+ 30e:	89 e0       	ldi	r24, 0x09	; 9
+ 310:	ee 0c       	add	r14, r14
+ 312:	ff 1c       	adc	r15, r15
+ 314:	00 1f       	adc	r16, r16
+ 316:	11 1f       	adc	r17, r17
+ 318:	8a 95       	dec	r24
+ 31a:	d1 f7       	brne	.-12     	; 0x310 <full_step_motor_left+0x1c>
+ 31c:	c8 01       	movw	r24, r16
+ 31e:	b7 01       	movw	r22, r14
+ 320:	28 e6       	ldi	r18, 0x68	; 104
+ 322:	31 e0       	ldi	r19, 0x01	; 1
+ 324:	40 e0       	ldi	r20, 0x00	; 0
+ 326:	50 e0       	ldi	r21, 0x00	; 0
+ 328:	0e 94 58 02 	call	0x4b0	; 0x4b0 <__udivmodsi4>
+ 32c:	79 01       	movw	r14, r18
+ 32e:	8a 01       	movw	r16, r20
+ 330:	20 e0       	ldi	r18, 0x00	; 0
+ 332:	30 e0       	ldi	r19, 0x00	; 0
+ 334:	40 e0       	ldi	r20, 0x00	; 0
+ 336:	50 e0       	ldi	r21, 0x00	; 0
+ 338:	80 91 60 00 	lds	r24, 0x0060
+ 33c:	88 23       	and	r24, r24
+ 33e:	11 f4       	brne	.+4      	; 0x344 <full_step_motor_left+0x50>
+ 340:	d8 9a       	sbi	0x1b, 0	; 27
+ 342:	da 98       	cbi	0x1b, 2	; 27
+ 344:	80 91 60 00 	lds	r24, 0x0060
+ 348:	81 30       	cpi	r24, 0x01	; 1
+ 34a:	11 f4       	brne	.+4      	; 0x350 <full_step_motor_left+0x5c>
+ 34c:	d9 9a       	sbi	0x1b, 1	; 27
+ 34e:	db 98       	cbi	0x1b, 3	; 27
+ 350:	80 91 60 00 	lds	r24, 0x0060
+ 354:	82 30       	cpi	r24, 0x02	; 2
+ 356:	11 f4       	brne	.+4      	; 0x35c <full_step_motor_left+0x68>
+ 358:	da 9a       	sbi	0x1b, 2	; 27
+ 35a:	d8 98       	cbi	0x1b, 0	; 27
+ 35c:	80 91 60 00 	lds	r24, 0x0060
+ 360:	83 30       	cpi	r24, 0x03	; 3
+ 362:	11 f4       	brne	.+4      	; 0x368 <full_step_motor_left+0x74>
+ 364:	db 9a       	sbi	0x1b, 3	; 27
+ 366:	d9 98       	cbi	0x1b, 1	; 27
+ 368:	80 91 60 00 	lds	r24, 0x0060
+ 36c:	84 30       	cpi	r24, 0x04	; 4
+ 36e:	21 f7       	brne	.-56     	; 0x338 <full_step_motor_left+0x44>
+ 370:	10 92 60 00 	sts	0x0060, r1
+ 374:	2f 5f       	subi	r18, 0xFF	; 255
+ 376:	3f 4f       	sbci	r19, 0xFF	; 255
+ 378:	4f 4f       	sbci	r20, 0xFF	; 255
+ 37a:	5f 4f       	sbci	r21, 0xFF	; 255
+ 37c:	e2 16       	cp	r14, r18
+ 37e:	f3 06       	cpc	r15, r19
+ 380:	04 07       	cpc	r16, r20
+ 382:	15 07       	cpc	r17, r21
+ 384:	c8 f6       	brcc	.-78     	; 0x338 <full_step_motor_left+0x44>
+ 386:	1f 91       	pop	r17
+ 388:	0f 91       	pop	r16
+ 38a:	ff 90       	pop	r15
+ 38c:	ef 90       	pop	r14
+ 38e:	08 95       	ret
+
+00000390 <full_step_motor_right>:
+ 390:	ef 92       	push	r14
+ 392:	ff 92       	push	r15
+ 394:	0f 93       	push	r16
+ 396:	1f 93       	push	r17
+ 398:	7b 01       	movw	r14, r22
+ 39a:	8c 01       	movw	r16, r24
+ 39c:	0e 94 3e 00 	call	0x7c	; 0x7c <TimerInit>
+ 3a0:	78 94       	sei
+ 3a2:	d0 9a       	sbi	0x1a, 0	; 26
+ 3a4:	d1 9a       	sbi	0x1a, 1	; 26
+ 3a6:	d2 9a       	sbi	0x1a, 2	; 26
+ 3a8:	d3 9a       	sbi	0x1a, 3	; 26
+ 3aa:	99 e0       	ldi	r25, 0x09	; 9
+ 3ac:	ee 0c       	add	r14, r14
+ 3ae:	ff 1c       	adc	r15, r15
+ 3b0:	00 1f       	adc	r16, r16
+ 3b2:	11 1f       	adc	r17, r17
+ 3b4:	9a 95       	dec	r25
+ 3b6:	d1 f7       	brne	.-12     	; 0x3ac <full_step_motor_right+0x1c>
+ 3b8:	c8 01       	movw	r24, r16
+ 3ba:	b7 01       	movw	r22, r14
+ 3bc:	28 e6       	ldi	r18, 0x68	; 104
+ 3be:	31 e0       	ldi	r19, 0x01	; 1
+ 3c0:	40 e0       	ldi	r20, 0x00	; 0
+ 3c2:	50 e0       	ldi	r21, 0x00	; 0
+ 3c4:	0e 94 58 02 	call	0x4b0	; 0x4b0 <__udivmodsi4>
+ 3c8:	79 01       	movw	r14, r18
+ 3ca:	8a 01       	movw	r16, r20
+ 3cc:	20 e0       	ldi	r18, 0x00	; 0
+ 3ce:	30 e0       	ldi	r19, 0x00	; 0
+ 3d0:	40 e0       	ldi	r20, 0x00	; 0
+ 3d2:	50 e0       	ldi	r21, 0x00	; 0
+ 3d4:	80 91 60 00 	lds	r24, 0x0060
+ 3d8:	88 23       	and	r24, r24
+ 3da:	11 f4       	brne	.+4      	; 0x3e0 <full_step_motor_right+0x50>
+ 3dc:	db 9a       	sbi	0x1b, 3	; 27
+ 3de:	d9 98       	cbi	0x1b, 1	; 27
+ 3e0:	80 91 60 00 	lds	r24, 0x0060
+ 3e4:	81 30       	cpi	r24, 0x01	; 1
+ 3e6:	11 f4       	brne	.+4      	; 0x3ec <full_step_motor_right+0x5c>
+ 3e8:	da 9a       	sbi	0x1b, 2	; 27
+ 3ea:	d8 98       	cbi	0x1b, 0	; 27
+ 3ec:	80 91 60 00 	lds	r24, 0x0060
+ 3f0:	82 30       	cpi	r24, 0x02	; 2
+ 3f2:	11 f4       	brne	.+4      	; 0x3f8 <full_step_motor_right+0x68>
+ 3f4:	d9 9a       	sbi	0x1b, 1	; 27
+ 3f6:	db 98       	cbi	0x1b, 3	; 27
+ 3f8:	80 91 60 00 	lds	r24, 0x0060
+ 3fc:	83 30       	cpi	r24, 0x03	; 3
+ 3fe:	11 f4       	brne	.+4      	; 0x404 <full_step_motor_right+0x74>
+ 400:	d8 9a       	sbi	0x1b, 0	; 27
+ 402:	da 98       	cbi	0x1b, 2	; 27
+ 404:	80 91 60 00 	lds	r24, 0x0060
+ 408:	84 30       	cpi	r24, 0x04	; 4
+ 40a:	21 f7       	brne	.-56     	; 0x3d4 <full_step_motor_right+0x44>
+ 40c:	10 92 60 00 	sts	0x0060, r1
+ 410:	2f 5f       	subi	r18, 0xFF	; 255
+ 412:	3f 4f       	sbci	r19, 0xFF	; 255
+ 414:	4f 4f       	sbci	r20, 0xFF	; 255
+ 416:	5f 4f       	sbci	r21, 0xFF	; 255
+ 418:	e2 16       	cp	r14, r18
+ 41a:	f3 06       	cpc	r15, r19
+ 41c:	04 07       	cpc	r16, r20
+ 41e:	15 07       	cpc	r17, r21
+ 420:	c8 f6       	brcc	.-78     	; 0x3d4 <full_step_motor_right+0x44>
+ 422:	1f 91       	pop	r17
+ 424:	0f 91       	pop	r16
+ 426:	ff 90       	pop	r15
+ 428:	ef 90       	pop	r14
+ 42a:	08 95       	ret
+
+0000042c <silnik>:
+ 42c:	cf 93       	push	r28
+ 42e:	df 93       	push	r29
+ 430:	c1 e0       	ldi	r28, 0x01	; 1
+ 432:	d0 e0       	ldi	r29, 0x00	; 0
+ 434:	62 e0       	ldi	r22, 0x02	; 2
+ 436:	70 e0       	ldi	r23, 0x00	; 0
+ 438:	80 e0       	ldi	r24, 0x00	; 0
+ 43a:	90 e0       	ldi	r25, 0x00	; 0
+ 43c:	41 e0       	ldi	r20, 0x01	; 1
+ 43e:	0e 94 e4 00 	call	0x1c8	; 0x1c8 <half_step_motor_right>
+ 442:	21 96       	adiw	r28, 0x01	; 1
+ 444:	81 e0       	ldi	r24, 0x01	; 1
+ 446:	c1 30       	cpi	r28, 0x01	; 1
+ 448:	d8 07       	cpc	r29, r24
+ 44a:	a1 f7       	brne	.-24     	; 0x434 <silnik+0x8>
+ 44c:	80 e0       	ldi	r24, 0x00	; 0
+ 44e:	90 e0       	ldi	r25, 0x00	; 0
+ 450:	df 91       	pop	r29
+ 452:	cf 91       	pop	r28
+ 454:	08 95       	ret
+
+00000456 <__vector_10>:
+ 456:	1f 92       	push	r1
+ 458:	0f 92       	push	r0
+ 45a:	0f b6       	in	r0, 0x3f	; 63
+ 45c:	0f 92       	push	r0
+ 45e:	11 24       	eor	r1, r1
+ 460:	8f 93       	push	r24
+ 462:	80 91 60 00 	lds	r24, 0x0060
+ 466:	8f 5f       	subi	r24, 0xFF	; 255
+ 468:	80 93 60 00 	sts	0x0060, r24
+ 46c:	8f 91       	pop	r24
+ 46e:	0f 90       	pop	r0
+ 470:	0f be       	out	0x3f, r0	; 63
+ 472:	0f 90       	pop	r0
+ 474:	1f 90       	pop	r1
+ 476:	18 95       	reti
+
+00000478 <main>:
+ 478:	cf 93       	push	r28
+ 47a:	df 93       	push	r29
+ 47c:	c0 e0       	ldi	r28, 0x00	; 0
+ 47e:	d0 e0       	ldi	r29, 0x00	; 0
+ 480:	61 e0       	ldi	r22, 0x01	; 1
+ 482:	70 e0       	ldi	r23, 0x00	; 0
+ 484:	80 e0       	ldi	r24, 0x00	; 0
+ 486:	90 e0       	ldi	r25, 0x00	; 0
+ 488:	41 e0       	ldi	r20, 0x01	; 1
+ 48a:	0e 94 e4 00 	call	0x1c8	; 0x1c8 <half_step_motor_right>
+ 48e:	61 e0       	ldi	r22, 0x01	; 1
+ 490:	70 e0       	ldi	r23, 0x00	; 0
+ 492:	80 e0       	ldi	r24, 0x00	; 0
+ 494:	90 e0       	ldi	r25, 0x00	; 0
+ 496:	42 e0       	ldi	r20, 0x02	; 2
+ 498:	0e 94 e4 00 	call	0x1c8	; 0x1c8 <half_step_motor_right>
+ 49c:	21 96       	adiw	r28, 0x01	; 1
+ 49e:	82 e0       	ldi	r24, 0x02	; 2
+ 4a0:	c0 30       	cpi	r28, 0x00	; 0
+ 4a2:	d8 07       	cpc	r29, r24
+ 4a4:	69 f7       	brne	.-38     	; 0x480 <main+0x8>
+ 4a6:	80 e0       	ldi	r24, 0x00	; 0
+ 4a8:	90 e0       	ldi	r25, 0x00	; 0
+ 4aa:	df 91       	pop	r29
+ 4ac:	cf 91       	pop	r28
+ 4ae:	08 95       	ret
+
+000004b0 <__udivmodsi4>:
+ 4b0:	a1 e2       	ldi	r26, 0x21	; 33
+ 4b2:	1a 2e       	mov	r1, r26
+ 4b4:	aa 1b       	sub	r26, r26
+ 4b6:	bb 1b       	sub	r27, r27
+ 4b8:	fd 01       	movw	r30, r26
+ 4ba:	0d c0       	rjmp	.+26     	; 0x4d6 <__udivmodsi4_ep>
+
+000004bc <__udivmodsi4_loop>:
+ 4bc:	aa 1f       	adc	r26, r26
+ 4be:	bb 1f       	adc	r27, r27
+ 4c0:	ee 1f       	adc	r30, r30
+ 4c2:	ff 1f       	adc	r31, r31
+ 4c4:	a2 17       	cp	r26, r18
+ 4c6:	b3 07       	cpc	r27, r19
+ 4c8:	e4 07       	cpc	r30, r20
+ 4ca:	f5 07       	cpc	r31, r21
+ 4cc:	20 f0       	brcs	.+8      	; 0x4d6 <__udivmodsi4_ep>
+ 4ce:	a2 1b       	sub	r26, r18
+ 4d0:	b3 0b       	sbc	r27, r19
+ 4d2:	e4 0b       	sbc	r30, r20
+ 4d4:	f5 0b       	sbc	r31, r21
+
+000004d6 <__udivmodsi4_ep>:
+ 4d6:	66 1f       	adc	r22, r22
+ 4d8:	77 1f       	adc	r23, r23
+ 4da:	88 1f       	adc	r24, r24
+ 4dc:	99 1f       	adc	r25, r25
+ 4de:	1a 94       	dec	r1
+ 4e0:	69 f7       	brne	.-38     	; 0x4bc <__udivmodsi4_loop>
+ 4e2:	60 95       	com	r22
+ 4e4:	70 95       	com	r23
+ 4e6:	80 95       	com	r24
+ 4e8:	90 95       	com	r25
+ 4ea:	9b 01       	movw	r18, r22
+ 4ec:	ac 01       	movw	r20, r24
+ 4ee:	bd 01       	movw	r22, r26
+ 4f0:	cf 01       	movw	r24, r30
+ 4f2:	08 95       	ret
+
+000004f4 <_exit>:
+ 4f4:	f8 94       	cli
+
+000004f6 <__stop_program>:
+ 4f6:	ff cf       	rjmp	.-2      	; 0x4f6 <__stop_program>

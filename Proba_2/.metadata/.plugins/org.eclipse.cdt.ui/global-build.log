@@ -1,0 +1,1172 @@
+12:05:50 **** Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../VL53L0X.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"VL53L0X.d" -MT"VL53L0X.o" -c -o "VL53L0X.o" "../VL53L0X.c"
+../VL53L0X.c:7:23: error: i2cmaster.h: No such file or directory
+../VL53L0X.c:8:20: error: millis.h: No such file or directory
+../VL53L0X.c: In function 'writeReg':
+../VL53L0X.c:38: warning: implicit declaration of function 'i2c_start'
+../VL53L0X.c:38: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:38: error: (Each undeclared identifier is reported only once
+../VL53L0X.c:38: error: for each function it appears in.)
+../VL53L0X.c:39: warning: implicit declaration of function 'i2c_write'
+../VL53L0X.c:41: warning: implicit declaration of function 'i2c_stop'
+../VL53L0X.c: In function 'writeReg16Bit':
+../VL53L0X.c:46: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c: In function 'writeReg32Bit':
+../VL53L0X.c:55: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c: In function 'readReg':
+../VL53L0X.c:67: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:69: warning: implicit declaration of function 'i2c_rep_start'
+../VL53L0X.c:69: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c:70: warning: implicit declaration of function 'i2c_readNak'
+../VL53L0X.c: In function 'readReg16Bit':
+../VL53L0X.c:78: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:80: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c:81: warning: implicit declaration of function 'i2c_readAck'
+../VL53L0X.c: In function 'readReg32Bit':
+../VL53L0X.c:90: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:92: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c: In function 'writeMulti':
+../VL53L0X.c:104: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c: In function 'readMulti':
+../VL53L0X.c:115: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:117: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c: In function 'readRangeContinuousMillimeters':
+../VL53L0X.c:794: warning: implicit declaration of function 'millis'
+make: *** [VL53L0X.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:07:42 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../VL53L0X.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"VL53L0X.d" -MT"VL53L0X.o" -c -o "VL53L0X.o" "../VL53L0X.c"
+../VL53L0X.c:7:23: error: i2cmaster.h: No such file or directory
+../VL53L0X.c:8:20: error: millis.h: No such file or directory
+../VL53L0X.c: In function 'writeReg':
+../VL53L0X.c:38: warning: implicit declaration of function 'i2c_start'
+../VL53L0X.c:38: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:38: error: (Each undeclared identifier is reported only once
+../VL53L0X.c:38: error: for each function it appears in.)
+../VL53L0X.c:39: warning: implicit declaration of function 'i2c_write'
+../VL53L0X.c:41: warning: implicit declaration of function 'i2c_stop'
+../VL53L0X.c: In function 'writeReg16Bit':
+../VL53L0X.c:46: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c: In function 'writeReg32Bit':
+../VL53L0X.c:55: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c: In function 'readReg':
+../VL53L0X.c:67: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:69: warning: implicit declaration of function 'i2c_rep_start'
+../VL53L0X.c:69: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c:70: warning: implicit declaration of function 'i2c_readNak'
+../VL53L0X.c: In function 'readReg16Bit':
+../VL53L0X.c:78: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:80: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c:81: warning: implicit declaration of function 'i2c_readAck'
+../VL53L0X.c: In function 'readReg32Bit':
+../VL53L0X.c:90: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:92: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c: In function 'writeMulti':
+../VL53L0X.c:104: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c: In function 'readMulti':
+../VL53L0X.c:115: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:117: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c: In function 'readRangeContinuousMillimeters':
+../VL53L0X.c:794: warning: implicit declaration of function 'millis'
+make: *** [VL53L0X.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:21:01 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../VL53L0X.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"VL53L0X.d" -MT"VL53L0X.o" -c -o "VL53L0X.o" "../VL53L0X.c"
+../VL53L0X.c:8:20: error: millis.h: No such file or directory
+../VL53L0X.c: In function 'readRangeContinuousMillimeters':
+../VL53L0X.c:794: warning: implicit declaration of function 'millis'
+make: *** [VL53L0X.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:22:35 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../VL53L0X.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"VL53L0X.d" -MT"VL53L0X.o" -c -o "VL53L0X.o" "../VL53L0X.c"
+Finished building: ../VL53L0X.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+../vl53l0xExample.c:13:24: error: debugPrint.h: No such file or directory
+../vl53l0xExample.c: In function 'init':
+../vl53l0xExample.c:20: warning: implicit declaration of function 'debugInit'
+../vl53l0xExample.c:24: error: 'UCSR0B' undeclared (first use in this function)
+../vl53l0xExample.c:24: error: (Each undeclared identifier is reported only once
+../vl53l0xExample.c:24: error: for each function it appears in.)
+../vl53l0xExample.c:24: error: 'RXEN0' undeclared (first use in this function)
+../vl53l0xExample.c:32: warning: implicit declaration of function 'initMillis'
+../vl53l0xExample.c: In function 'main':
+../vl53l0xExample.c:40: warning: implicit declaration of function 'debug_str'
+../vl53l0xExample.c:43: error: 'GIT_VERSION' undeclared (first use in this function)
+../vl53l0xExample.c:44: warning: implicit declaration of function 'debug_putc'
+../vl53l0xExample.c:58: warning: implicit declaration of function 'debug_hex'
+../vl53l0xExample.c:60: warning: implicit declaration of function 'debug_dec'
+../vl53l0xExample.c:62: warning: implicit declaration of function 'debug_dec_fix'
+make: *** [vl53l0xExample.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:22:49 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+../vl53l0xExample.c:13:24: error: debugPrint.h: No such file or directory
+../vl53l0xExample.c: In function 'init':
+../vl53l0xExample.c:20: warning: implicit declaration of function 'debugInit'
+../vl53l0xExample.c:24: error: 'UCSR0B' undeclared (first use in this function)
+../vl53l0xExample.c:24: error: (Each undeclared identifier is reported only once
+../vl53l0xExample.c:24: error: for each function it appears in.)
+../vl53l0xExample.c:24: error: 'RXEN0' undeclared (first use in this function)
+../vl53l0xExample.c:32: warning: implicit declaration of function 'initMillis'
+../vl53l0xExample.c: In function 'main':
+../vl53l0xExample.c:40: warning: implicit declaration of function 'debug_str'
+../vl53l0xExample.c:43: error: 'GIT_VERSION' undeclared (first use in this function)
+../vl53l0xExample.c:44: warning: implicit declaration of function 'debug_putc'
+../vl53l0xExample.c:58: warning: implicit declaration of function 'debug_hex'
+../vl53l0xExample.c:60: warning: implicit declaration of function 'debug_dec'
+../vl53l0xExample.c:62: warning: implicit declaration of function 'debug_dec_fix'
+make: *** [vl53l0xExample.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:46:16 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../VL53L0X.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"VL53L0X.d" -MT"VL53L0X.o" -c -o "VL53L0X.o" "../VL53L0X.c"
+Finished building: ../VL53L0X.c
+ 
+Building file: ../debugPrint.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"debugPrint.d" -MT"debugPrint.o" -c -o "debugPrint.o" "../debugPrint.c"
+In file included from ../debugPrint.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/setbaud.h:218:4: warning: #warning "Baud rate achieved is lower than allowed"
+../debugPrint.c: In function 'debugInit':
+../debugPrint.c:20: error: 'PRR' undeclared (first use in this function)
+../debugPrint.c:20: error: (Each undeclared identifier is reported only once
+../debugPrint.c:20: error: for each function it appears in.)
+../debugPrint.c:20: error: 'PRUSART0' undeclared (first use in this function)
+../debugPrint.c:21: error: 'UCSR0B' undeclared (first use in this function)
+../debugPrint.c:21: error: 'TXEN0' undeclared (first use in this function)
+../debugPrint.c:21: error: 'RXEN0' undeclared (first use in this function)
+../debugPrint.c:22: error: 'UBRR0H' undeclared (first use in this function)
+../debugPrint.c:23: error: 'UBRR0L' undeclared (first use in this function)
+../debugPrint.c:25: error: 'UCSR0A' undeclared (first use in this function)
+../debugPrint.c:25: error: 'U2X0' undeclared (first use in this function)
+../debugPrint.c: In function 'debug_putc':
+../debugPrint.c:32: error: 'UCSR0A' undeclared (first use in this function)
+../debugPrint.c:32: error: 'UDRE0' undeclared (first use in this function)
+../debugPrint.c:33: error: 'UDR0' undeclared (first use in this function)
+make: *** [debugPrint.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:50:16 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+../i2cmaster.c:11:24: error: debugPrint.h: No such file or directory
+../i2cmaster.c: In function 'i2c_start':
+../i2cmaster.c:43: warning: implicit declaration of function 'debug_str'
+../i2cmaster.c: In function 'searchI2C':
+../i2cmaster.c:228: warning: implicit declaration of function 'debug_hex'
+../i2cmaster.c:229: warning: implicit declaration of function 'debug_putc'
+make: *** [i2cmaster.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:50:36 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+../i2cmaster.c: In function 'i2c_start':
+../i2cmaster.c:63: warning: implicit declaration of function 'debug_str'
+../i2cmaster.c: In function 'searchI2C':
+../i2cmaster.c:228: warning: implicit declaration of function 'debug_hex'
+../i2cmaster.c:229: warning: implicit declaration of function 'debug_putc'
+Finished building: ../i2cmaster.c
+ 
+Building file: ../millis.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"millis.d" -MT"millis.o" -c -o "millis.o" "../millis.c"
+../millis.c:41: warning: 'TIMER0_COMPA_vect' appears to be a misspelled signal handler
+Finished building: ../millis.c
+ 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+../vl53l0xExample.c: In function 'init':
+../vl53l0xExample.c:19: warning: implicit declaration of function 'debugInit'
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./i2cmaster.o: In function `i2c_readNak':
+i2cmaster.c:(.text.i2c_readNak+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readAck':
+i2cmaster.c:(.text.i2c_readAck+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_write':
+i2cmaster.c:(.text.i2c_write+0x1a): undefined reference to `debug_str'
+i2cmaster.c:(.text.i2c_write+0x32): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_stop':
+i2cmaster.c:(.text.i2c_stop+0x18): undefined reference to `debug_str'
+./i2cmaster.o:i2cmaster.c:(.text.i2c_start+0x3e): more undefined references to `debug_str' follow
+./i2cmaster.o: In function `searchI2C':
+i2cmaster.c:(.text.searchI2C+0x20): undefined reference to `debug_hex'
+i2cmaster.c:(.text.searchI2C+0x28): undefined reference to `debug_putc'
+i2cmaster.c:(.text.searchI2C+0x3a): undefined reference to `debug_str'
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:50:42 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+../i2cmaster.c: In function 'i2c_stop':
+../i2cmaster.c:146: warning: implicit declaration of function 'debug_str'
+../i2cmaster.c: In function 'searchI2C':
+../i2cmaster.c:228: warning: implicit declaration of function 'debug_hex'
+../i2cmaster.c:229: warning: implicit declaration of function 'debug_putc'
+Finished building: ../i2cmaster.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./i2cmaster.o: In function `i2c_readNak':
+i2cmaster.c:(.text.i2c_readNak+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readAck':
+i2cmaster.c:(.text.i2c_readAck+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_write':
+i2cmaster.c:(.text.i2c_write+0x1a): undefined reference to `debug_str'
+i2cmaster.c:(.text.i2c_write+0x32): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_stop':
+i2cmaster.c:(.text.i2c_stop+0x18): undefined reference to `debug_str'
+./i2cmaster.o:i2cmaster.c:(.text.searchI2C+0x6): more undefined references to `debug_str' follow
+./i2cmaster.o: In function `searchI2C':
+i2cmaster.c:(.text.searchI2C+0x20): undefined reference to `debug_hex'
+i2cmaster.c:(.text.searchI2C+0x28): undefined reference to `debug_putc'
+i2cmaster.c:(.text.searchI2C+0x3a): undefined reference to `debug_str'
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:18 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+../i2cmaster.c: In function 'i2c_write':
+../i2cmaster.c:170: warning: implicit declaration of function 'debug_str'
+Finished building: ../i2cmaster.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./i2cmaster.o: In function `searchI2C':
+i2cmaster.c:(.text.searchI2C+0x6): undefined reference to `debug_str'
+i2cmaster.c:(.text.searchI2C+0x22): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readNak':
+i2cmaster.c:(.text.i2c_readNak+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readAck':
+i2cmaster.c:(.text.i2c_readAck+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_write':
+i2cmaster.c:(.text.i2c_write+0x1a): undefined reference to `debug_str'
+./i2cmaster.o:i2cmaster.c:(.text.i2c_write+0x32): more undefined references to `debug_str' follow
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:29 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+../i2cmaster.c: In function 'i2c_write':
+../i2cmaster.c:176: warning: implicit declaration of function 'debug_str'
+Finished building: ../i2cmaster.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./i2cmaster.o: In function `searchI2C':
+i2cmaster.c:(.text.searchI2C+0x6): undefined reference to `debug_str'
+i2cmaster.c:(.text.searchI2C+0x22): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readNak':
+i2cmaster.c:(.text.i2c_readNak+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readAck':
+i2cmaster.c:(.text.i2c_readAck+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_write':
+i2cmaster.c:(.text.i2c_write+0x2a): undefined reference to `debug_str'
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:41 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+../i2cmaster.c: In function 'i2c_readAck':
+../i2cmaster.c:196: warning: implicit declaration of function 'debug_str'
+Finished building: ../i2cmaster.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./i2cmaster.o: In function `searchI2C':
+i2cmaster.c:(.text.searchI2C+0x6): undefined reference to `debug_str'
+i2cmaster.c:(.text.searchI2C+0x22): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readNak':
+i2cmaster.c:(.text.i2c_readNak+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readAck':
+i2cmaster.c:(.text.i2c_readAck+0x1c): undefined reference to `debug_str'
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:47 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./i2cmaster.o: In function `searchI2C':
+i2cmaster.c:(.text.searchI2C+0x6): undefined reference to `debug_str'
+i2cmaster.c:(.text.searchI2C+0x22): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readNak':
+i2cmaster.c:(.text.i2c_readNak+0x1c): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readAck':
+i2cmaster.c:(.text.i2c_readAck+0x1c): undefined reference to `debug_str'
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:51 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+../i2cmaster.c: In function 'i2c_readNak':
+../i2cmaster.c:213: warning: implicit declaration of function 'debug_str'
+Finished building: ../i2cmaster.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./i2cmaster.o: In function `searchI2C':
+i2cmaster.c:(.text.searchI2C+0x6): undefined reference to `debug_str'
+i2cmaster.c:(.text.searchI2C+0x22): undefined reference to `debug_str'
+./i2cmaster.o: In function `i2c_readNak':
+i2cmaster.c:(.text.i2c_readNak+0x1c): undefined reference to `debug_str'
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:59 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+../i2cmaster.c: In function 'searchI2C':
+../i2cmaster.c:219: warning: implicit declaration of function 'debug_str'
+Finished building: ../i2cmaster.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./i2cmaster.o: In function `searchI2C':
+i2cmaster.c:(.text.searchI2C+0x6): undefined reference to `debug_str'
+i2cmaster.c:(.text.searchI2C+0x22): undefined reference to `debug_str'
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:52:14 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+Finished building: ../i2cmaster.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:52:23 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./vl53l0xExample.o: In function `init':
+vl53l0xExample.c:(.text.init+0x0): undefined reference to `debugInit'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:52:34 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9040 bytes (27.6% Full)
+(.text + .data + .bootloader)
+
+Data:        281 bytes (13.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:09:44 **** Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../HD44780.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HD44780.d" -MT"HD44780.o" -c -o "HD44780.o" "../HD44780.c"
+Finished building: ../HD44780.c
+ 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9334 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:        281 bytes (13.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:12:04 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+../vl53l0xExample.c: In function 'main':
+../vl53l0xExample.c:47: warning: implicit declaration of function 'LCD_Initalize'
+../vl53l0xExample.c:48: warning: implicit declaration of function 'LCD_Home'
+../vl53l0xExample.c:55: warning: implicit declaration of function 'LCD_GoTo'
+../vl53l0xExample.c:56: warning: implicit declaration of function 'sprintf'
+../vl53l0xExample.c:56: warning: incompatible implicit declaration of built-in function 'sprintf'
+../vl53l0xExample.c:57: warning: implicit declaration of function 'LCD_WriteText'
+../vl53l0xExample.c:59: warning: implicit declaration of function '_delay_ms'
+../vl53l0xExample.c:35: warning: unused variable 'xTraStats'
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+./vl53l0xExample.o: In function `main':
+vl53l0xExample.c:(.text.main+0x5c): undefined reference to `_delay_ms'
+make: *** [Proba_2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:12:27 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+../vl53l0xExample.c: In function 'main':
+../vl53l0xExample.c:58: warning: implicit declaration of function 'sprintf'
+../vl53l0xExample.c:58: warning: incompatible implicit declaration of built-in function 'sprintf'
+../vl53l0xExample.c:37: warning: unused variable 'xTraStats'
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9404 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:13:22 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+../vl53l0xExample.c: In function 'main':
+../vl53l0xExample.c:44: warning: unused variable 'xTraStats'
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9404 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:13:36 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9404 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:13:50 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9404 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:13:59 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9404 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:15:23 **** Clean-only build of configuration Release for project Proba_2 ****
+make clean 
+rm -rf  Proba_2.hex  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o  Proba_2.eep  sizedummy  Proba_2.lss  ./HD44780.d ./VL53L0X.d ./i2cmaster.d ./main.d ./millis.d ./vl53l0xExample.d  Proba_2.elf
+ 
+12:15:24 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../HD44780.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HD44780.d" -MT"HD44780.o" -c -o "HD44780.o" "../HD44780.c"
+Finished building: ../HD44780.c
+ 
+Building file: ../VL53L0X.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"VL53L0X.d" -MT"VL53L0X.o" -c -o "VL53L0X.o" "../VL53L0X.c"
+Finished building: ../VL53L0X.c
+ 
+Building file: ../i2cmaster.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2cmaster.d" -MT"i2cmaster.o" -c -o "i2cmaster.o" "../i2cmaster.c"
+Finished building: ../i2cmaster.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../millis.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"millis.d" -MT"millis.o" -c -o "millis.o" "../millis.c"
+../millis.c:41: warning: 'TIMER0_COMPA_vect' appears to be a misspelled signal handler
+Finished building: ../millis.c
+ 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9382 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:15:46 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9382 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:19:22 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10808 bytes (33.0% Full)
+(.text + .data + .bootloader)
+
+Data:        283 bytes (13.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:19:32 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10808 bytes (33.0% Full)
+(.text + .data + .bootloader)
+
+Data:        283 bytes (13.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:19:40 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10808 bytes (33.0% Full)
+(.text + .data + .bootloader)
+
+Data:        283 bytes (13.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:20:10 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10808 bytes (33.0% Full)
+(.text + .data + .bootloader)
+
+Data:        283 bytes (13.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:20:12 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10808 bytes (33.0% Full)
+(.text + .data + .bootloader)
+
+Data:        283 bytes (13.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:21:04 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10812 bytes (33.0% Full)
+(.text + .data + .bootloader)
+
+Data:        283 bytes (13.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:21:06 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10812 bytes (33.0% Full)
+(.text + .data + .bootloader)
+
+Data:        283 bytes (13.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:21:08 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10812 bytes (33.0% Full)
+(.text + .data + .bootloader)
+
+Data:        283 bytes (13.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:22:46 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10870 bytes (33.2% Full)
+(.text + .data + .bootloader)
+
+Data:        289 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:23:37 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10870 bytes (33.2% Full)
+(.text + .data + .bootloader)
+
+Data:        289 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:40:25 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10870 bytes (33.2% Full)
+(.text + .data + .bootloader)
+
+Data:        289 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:40:29 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10870 bytes (33.2% Full)
+(.text + .data + .bootloader)
+
+Data:        289 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:41:43 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10870 bytes (33.2% Full)
+(.text + .data + .bootloader)
+
+Data:        289 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:42:27 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10858 bytes (33.1% Full)
+(.text + .data + .bootloader)
+
+Data:        289 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:42:51 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+../vl53l0xExample.c: In function 'main':
+../vl53l0xExample.c:58: warning: unused variable 'text'
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9386 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:42:58 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9386 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

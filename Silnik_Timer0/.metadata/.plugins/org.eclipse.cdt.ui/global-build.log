@@ -1,0 +1,1436 @@
+12:34:53 **** Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [Silnik-Timer0.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:35:10 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1248 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:35:18 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1248 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:38:12 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1248 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:40:40 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:43:38 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:44:13 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:44:58 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:45:10 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:45:46 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+../StepMotor.c:366: warning: 'TIMER0_COMPA_vect' appears to be a misspelled signal handler
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:45:53 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:46:06 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:47:16 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:47:23 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:52:10 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+../StepMotor.c:366: warning: 'TIMER0_COMPA_vect' appears to be a misspelled signal handler
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1228 bytes (3.7% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:52:49 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1228 bytes (3.7% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:56:22 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:57:21 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+../StepMotor.c:366: warning: 'TIMER0_COMP_VECTOR' appears to be a misspelled signal handler
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:01 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+../StepMotor.c:366: warning: 'TIMER0_COMPA_vect' appears to be a misspelled signal handler
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1244 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:05:02 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+../StepMotor.c:374: warning: 'TIMER0_COMP_VECTOR' appears to be a misspelled signal handler
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1162 bytes (3.5% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:07:38 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:08:03 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:08:18 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:08:44 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:21:26 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:22:43 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:23:09 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+../StepMotor.c: In function 'TimerInit':
+../StepMotor.c:63: warning: large integer implicitly truncated to unsigned type
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:23:16 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:23:48 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:24:38 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:24:53 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:25:37 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:40:25 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:40:55 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:25:15 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:25:43 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:32:33 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:34:02 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:34:39 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:34:53 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1236 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:35:03 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1236 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:13:28 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../StepMotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"StepMotor.d" -MT"StepMotor.o" -c -o "StepMotor.o" "../StepMotor.c"
+Finished building: ../StepMotor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1236 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:13:36 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1236 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:16:41 **** Incremental Build of configuration Release for project Silnik-Timer0 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Silnik-Timer0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Silnik-Timer0.map -mmcu=atmega32 -o "Silnik-Timer0.elf"  ./StepMotor.o ./main.o   
+Finished building target: Silnik-Timer0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Silnik-Timer0.elf  >"Silnik-Timer0.lss"
+Finished building: Silnik-Timer0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Silnik-Timer0.elf  "Silnik-Timer0.hex"
+Finished building: Silnik-Timer0.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Silnik-Timer0.elf  "Silnik-Timer0.eep"
+Finished building: Silnik-Timer0.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Silnik-Timer0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1272 bytes (3.9% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

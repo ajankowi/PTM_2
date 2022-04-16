@@ -1,0 +1,42 @@
+23:16:16 **** Incremental Build of configuration Release for project SD_czysty ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_czysty.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_czysty.map -mmcu=atmega32 -o "SD_czysty.elf"  ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_czysty.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_czysty.elf  >"SD_czysty.lss"
+Finished building: SD_czysty.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_czysty.elf  "SD_czysty.hex"
+Finished building: SD_czysty.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_czysty.elf  "SD_czysty.eep"
+Finished building: SD_czysty.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_czysty.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16266 bytes (49.6% Full)
+(.text + .data + .bootloader)
+
+Data:        810 bytes (39.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:16:17 Build Finished. 0 errors, 0 warnings. (took 987ms)
+

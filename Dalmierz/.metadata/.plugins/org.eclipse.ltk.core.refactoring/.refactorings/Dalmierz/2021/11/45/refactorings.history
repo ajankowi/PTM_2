@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Dalmierz/VL53L0x.h&apos; to &apos;VL53L0X.h&apos;" description="Rename resource &apos;VL53L0x.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="VL53L0x.h" name="VL53L0X.h" stamp="1636394426954" updateReferences="true"/>
+</session>

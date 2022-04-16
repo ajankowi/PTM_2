@@ -1,0 +1,210 @@
+23:06:07 **** Build of configuration Release for project SD_czysty ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:89: warning: implicit declaration of function 'LCD_WriteText'
+../main.c:125: error: 'z' undeclared (first use in this function)
+../main.c:125: error: (Each undeclared identifier is reported only once
+../main.c:125: error: for each function it appears in.)
+../main.c:126: warning: implicit declaration of function 'LCD_Clear'
+../main.c:127: warning: implicit declaration of function 'LCD_GoTo'
+../main.c:73: warning: unused variable 'kat'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:07:03 **** Incremental Build of configuration Release for project SD_czysty ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:89: warning: implicit declaration of function 'LCD_WriteText'
+../main.c:73: warning: unused variable 'kat'
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_czysty.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_czysty.map -mmcu=atmega32 -o "SD_czysty.elf"  ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+./main.o: In function `main':
+main.c:(.text.main+0x7a): undefined reference to `LCD_WriteText'
+make: *** [SD_czysty.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:08:00 **** Incremental Build of configuration Release for project SD_czysty ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:69: warning: unused variable 'text'
+Finished building: ../main.c
+ 
+Building target: SD_czysty.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_czysty.map -mmcu=atmega32 -o "SD_czysty.elf"  ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_czysty.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_czysty.elf  >"SD_czysty.lss"
+Finished building: SD_czysty.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_czysty.elf  "SD_czysty.hex"
+Finished building: SD_czysty.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_czysty.elf  "SD_czysty.eep"
+Finished building: SD_czysty.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_czysty.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16266 bytes (49.6% Full)
+(.text + .data + .bootloader)
+
+Data:        810 bytes (39.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:08:09 **** Incremental Build of configuration Release for project SD_czysty ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_czysty.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_czysty.map -mmcu=atmega32 -o "SD_czysty.elf"  ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_czysty.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_czysty.elf  >"SD_czysty.lss"
+Finished building: SD_czysty.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_czysty.elf  "SD_czysty.hex"
+Finished building: SD_czysty.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_czysty.elf  "SD_czysty.eep"
+Finished building: SD_czysty.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_czysty.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16266 bytes (49.6% Full)
+(.text + .data + .bootloader)
+
+Data:        810 bytes (39.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:09:20 **** Incremental Build of configuration Release for project SD_czysty ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_czysty.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_czysty.map -mmcu=atmega32 -o "SD_czysty.elf"  ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_czysty.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_czysty.elf  >"SD_czysty.lss"
+Finished building: SD_czysty.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_czysty.elf  "SD_czysty.hex"
+Finished building: SD_czysty.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_czysty.elf  "SD_czysty.eep"
+Finished building: SD_czysty.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_czysty.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16266 bytes (49.6% Full)
+(.text + .data + .bootloader)
+
+Data:        810 bytes (39.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:16:16 **** Incremental Build of configuration Release for project SD_czysty ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: SD_czysty.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_czysty.map -mmcu=atmega32 -o "SD_czysty.elf"  ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_czysty.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_czysty.elf  >"SD_czysty.lss"
+Finished building: SD_czysty.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SD_czysty.elf  "SD_czysty.hex"
+Finished building: SD_czysty.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SD_czysty.elf  "SD_czysty.eep"
+Finished building: SD_czysty.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_czysty.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16266 bytes (49.6% Full)
+(.text + .data + .bootloader)
+
+Data:        810 bytes (39.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

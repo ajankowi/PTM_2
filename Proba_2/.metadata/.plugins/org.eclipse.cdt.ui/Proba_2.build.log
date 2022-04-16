@@ -1,0 +1,42 @@
+12:42:58 **** Incremental Build of configuration Release for project Proba_2 ****
+make all 
+Building file: ../vl53l0xExample.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"vl53l0xExample.d" -MT"vl53l0xExample.o" -c -o "vl53l0xExample.o" "../vl53l0xExample.c"
+Finished building: ../vl53l0xExample.c
+ 
+Building target: Proba_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Proba_2.map -mmcu=atmega32 -o "Proba_2.elf"  ./HD44780.o ./VL53L0X.o ./i2cmaster.o ./main.o ./millis.o ./vl53l0xExample.o   
+Finished building target: Proba_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Proba_2.elf  >"Proba_2.lss"
+Finished building: Proba_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Proba_2.elf  "Proba_2.hex"
+Finished building: Proba_2.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Proba_2.elf  "Proba_2.eep"
+Finished building: Proba_2.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9386 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+12:42:59 Build Finished. 0 errors, 0 warnings. (took 1s.401ms)
+

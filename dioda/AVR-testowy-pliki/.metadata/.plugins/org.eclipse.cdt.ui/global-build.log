@@ -1,0 +1,2280 @@
+22:20:04 **** Clean-only build of configuration Release for project AVR-testowy ****
+make clean 
+rm -rf  AVR-testowy.hex  ./main.o  AVR-testowy.eep  sizedummy  AVR-testowy.lss  ./main.d  AVR-testowy.elf
+ 
+22:20:04 **** Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     136 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:20:27 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     136 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:22:11 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     136 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:24:01 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     136 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:24:02 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     136 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:24:41 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     144 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:25:06 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     136 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:29:41 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     136 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:36:00 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     136 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:38:05 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     136 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:50:03 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     140 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:46:12 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:21:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     118 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:46:43 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     118 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:46:46 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     118 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:57:34 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     124 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:02:46 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     128 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:11:35 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:11:50 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:26:56 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:26:58 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:32:36 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:33:09 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:37:44 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:40:27 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:40:36 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:43:55 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:89: error: expected identifier or '(' before '}' token
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:45:01 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     154 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:45:11 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     154 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:46:52 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     154 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:50:52 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:52:36 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:52:48 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:53:07 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:55:04 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:56:15 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:10:53 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:17:02 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:18:16 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:18:44 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:23:53 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:24:28 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:24:48 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:37:9: warning: multi-character character constant
+../main.c: In function 'main':
+../main.c:37: warning: large integer implicitly truncated to unsigned type
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:40:55 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:40:56 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:41:44 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:42:00 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:42:13 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:42:30 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:42:37 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     142 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:28:09 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     158 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:        130 bytes (6.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:42:02 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:67: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:67: warning: type of 'USART_TX_vect' defaults to 'int'
+../main.c:71: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     190 bytes (0.6% Full)
+(.text + .data + .bootloader)
+
+Data:        130 bytes (6.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:48:12 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'serialWrite':
+../main.c:73: error: expected ')' before '{' token
+../main.c:79: error: expected expression before '}' token
+../main.c: At top level:
+../main.c:82: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:82: warning: type of 'USART_TX_vect' defaults to 'int'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:48:22 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:82: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:82: warning: type of 'USART_TX_vect' defaults to 'int'
+../main.c:90: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     300 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:        130 bytes (6.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:49:26 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:82: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:82: warning: type of 'USART_TX_vect' defaults to 'int'
+../main.c:94: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     312 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:        130 bytes (6.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:49:28 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     312 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:        130 bytes (6.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:49:29 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     312 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:        130 bytes (6.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:53:19 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:44: warning: implicit declaration of function 'sei'
+../main.c:51: warning: implicit declaration of function 'delay_ms'
+../main.c: At top level:
+../main.c:89: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:89: warning: type of 'USART_TX_vect' defaults to 'int'
+../main.c:101: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+main.c:(.text.main+0x26): undefined reference to `delay_ms'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:54:00 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:44: warning: implicit declaration of function 'sei'
+../main.c: At top level:
+../main.c:89: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:89: warning: type of 'USART_TX_vect' defaults to 'int'
+../main.c:101: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:54:48 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:57: warning: implicit declaration of function 'sei'
+../main.c: At top level:
+../main.c:102: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:102: warning: type of 'USART_TX_vect' defaults to 'int'
+../main.c:114: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:56:14 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:57: warning: implicit declaration of function 'sei'
+../main.c: At top level:
+../main.c:102: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:102: warning: type of 'USART0_TX_vect' defaults to 'int'
+../main.c:114: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:56:19 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:57: warning: implicit declaration of function 'sei'
+../main.c: At top level:
+../main.c:102: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:102: warning: type of 'USART1_TX_vect' defaults to 'int'
+../main.c:114: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:58:15 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:58: warning: implicit declaration of function 'sei'
+../main.c: At top level:
+../main.c:103: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:115: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:58:43 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:58: warning: implicit declaration of function 'sei'
+../main.c: At top level:
+../main.c:103: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:115: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:00:53 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:58: warning: implicit declaration of function 'sei'
+../main.c: At top level:
+../main.c:103: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:115: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:01:12 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:58: warning: implicit declaration of function 'sei'
+../main.c: At top level:
+../main.c:103: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:115: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:01:17 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:58: warning: implicit declaration of function 'sei'
+../main.c: At top level:
+../main.c:103: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:103: warning: type of 'USART_TX_vect' defaults to 'int'
+../main.c:115: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+./main.o: In function `main':
+main.c:(.text.main+0xe): undefined reference to `sei'
+make: *** [AVR-testowy.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:02:54 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:102: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:102: warning: type of 'USART_TX_VECTOR' defaults to 'int'
+../main.c:114: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     380 bytes (1.2% Full)
+(.text + .data + .bootloader)
+
+Data:        148 bytes (7.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:02:57 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     380 bytes (1.2% Full)
+(.text + .data + .bootloader)
+
+Data:        148 bytes (7.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:03:03 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:102: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:102: warning: type of 'USART_TX_vect' defaults to 'int'
+../main.c:114: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     380 bytes (1.2% Full)
+(.text + .data + .bootloader)
+
+Data:        148 bytes (7.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:03:58 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:102: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:102: warning: type of '__vector_15' defaults to 'int'
+../main.c:114: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     380 bytes (1.2% Full)
+(.text + .data + .bootloader)
+
+Data:        148 bytes (7.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:05:42 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:102: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:102: warning: type of '__vector_14' defaults to 'int'
+../main.c:114: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     380 bytes (1.2% Full)
+(.text + .data + .bootloader)
+
+Data:        148 bytes (7.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:06:25 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:102: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:102: warning: type of '__vector_13' defaults to 'int'
+../main.c:114: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     380 bytes (1.2% Full)
+(.text + .data + .bootloader)
+
+Data:        148 bytes (7.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:06:36 **** Incremental Build of configuration Release for project AVR-testowy ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:102: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:102: warning: type of '__vector_15' defaults to 'int'
+../main.c:114: warning: control reaches end of non-void function
+Finished building: ../main.c
+ 
+Building target: AVR-testowy.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,AVR-testowy.map -mmcu=atmega32 -o "AVR-testowy.elf"  ./main.o   
+Finished building target: AVR-testowy.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S AVR-testowy.elf  >"AVR-testowy.lss"
+Finished building: AVR-testowy.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex AVR-testowy.elf  "AVR-testowy.hex"
+Finished building: AVR-testowy.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex AVR-testowy.elf  "AVR-testowy.eep"
+Finished building: AVR-testowy.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 AVR-testowy.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     380 bytes (1.2% Full)
+(.text + .data + .bootloader)
+
+Data:        148 bytes (7.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

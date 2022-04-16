@@ -1,0 +1,20 @@
+12:25:20 **** Incremental Build of configuration Release for project Proba_4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Proba_4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     562 bytes (1.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+12:25:20 Build Finished. 0 errors, 0 warnings. (took 305ms)
+

@@ -1,0 +1,20 @@
+00:21:27 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   47638 bytes (145.4% Full)
+(.text + .data + .bootloader)
+
+Data:       1008 bytes (49.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:21:28 Build Finished. 0 errors, 0 warnings. (took 152ms)
+

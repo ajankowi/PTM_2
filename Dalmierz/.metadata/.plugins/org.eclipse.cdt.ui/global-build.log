@@ -1,0 +1,39 @@
+19:09:24 **** Build of configuration Debug for project Dalmierz ****
+make all 
+Building file: ../VL53L0X.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"VL53L0X.d" -MT"VL53L0X.o" -c -o "VL53L0X.o" "../VL53L0X.c"
+../VL53L0X.c:7:23: error: i2cmaster.h: No such file or directory
+../VL53L0X.c:8:20: error: millis.h: No such file or directory
+../VL53L0X.c: In function 'writeReg':
+../VL53L0X.c:38: warning: implicit declaration of function 'i2c_start'
+../VL53L0X.c:38: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:38: error: (Each undeclared identifier is reported only once
+../VL53L0X.c:38: error: for each function it appears in.)
+../VL53L0X.c:39: warning: implicit declaration of function 'i2c_write'
+../VL53L0X.c:41: warning: implicit declaration of function 'i2c_stop'
+../VL53L0X.c: In function 'writeReg16Bit':
+../VL53L0X.c:46: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c: In function 'writeReg32Bit':
+../VL53L0X.c:55: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c: In function 'readReg':
+../VL53L0X.c:67: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:69: warning: implicit declaration of function 'i2c_rep_start'
+../VL53L0X.c:69: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c:70: warning: implicit declaration of function 'i2c_readNak'
+../VL53L0X.c: In function 'readReg16Bit':
+../VL53L0X.c:78: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:80: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c:81: warning: implicit declaration of function 'i2c_readAck'
+../VL53L0X.c: In function 'readReg32Bit':
+../VL53L0X.c:90: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:92: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c: In function 'writeMulti':
+../VL53L0X.c:104: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c: In function 'readMulti':
+../VL53L0X.c:115: error: 'I2C_WRITE' undeclared (first use in this function)
+../VL53L0X.c:117: error: 'I2C_READ' undeclared (first use in this function)
+../VL53L0X.c: In function 'readRangeContinuousMillimeters':
+../VL53L0X.c:794: warning: implicit declaration of function 'millis'
+make: *** [VL53L0X.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

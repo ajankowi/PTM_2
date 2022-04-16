@@ -1,0 +1,42 @@
+14:28:17 **** Incremental Build of configuration Release for project test ****
+make all 
+Building file: ../SM.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"SM.d" -MT"SM.o" -c -o "SM.o" "../SM.c"
+Finished building: ../SM.c
+ 
+Building target: test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,test.map -mmcu=atmega32 -o "test.elf"  ./SM.o   
+Finished building target: test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S test.elf  >"test.lss"
+Finished building: test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex test.elf  "test.hex"
+Finished building: test.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex test.elf  "test.eep"
+Finished building: test.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1232 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:          1 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:28:18 Build Finished. 0 errors, 0 warnings. (took 946ms)
+

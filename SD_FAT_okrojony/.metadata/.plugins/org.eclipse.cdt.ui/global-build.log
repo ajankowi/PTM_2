@@ -1,0 +1,2118 @@
+23:45:27 **** Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../HD47780.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"HD47780.d" -MT"HD47780.o" -c -o "HD47780.o" "../HD47780.c"
+../HD47780.c:13:21: error: HD44780.h: No such file or directory
+../HD47780.c: In function '_LCD_OutNibble':
+../HD47780.c:22: error: 'LCD_DB4_PORT' undeclared (first use in this function)
+../HD47780.c:22: error: (Each undeclared identifier is reported only once
+../HD47780.c:22: error: for each function it appears in.)
+../HD47780.c:22: error: 'LCD_DB4' undeclared (first use in this function)
+../HD47780.c:27: error: 'LCD_DB5_PORT' undeclared (first use in this function)
+../HD47780.c:27: error: 'LCD_DB5' undeclared (first use in this function)
+../HD47780.c:32: error: 'LCD_DB6_PORT' undeclared (first use in this function)
+../HD47780.c:32: error: 'LCD_DB6' undeclared (first use in this function)
+../HD47780.c:37: error: 'LCD_DB7_PORT' undeclared (first use in this function)
+../HD47780.c:37: error: 'LCD_DB7' undeclared (first use in this function)
+../HD47780.c: In function '_LCD_Write':
+../HD47780.c:48: error: 'LCD_E_PORT' undeclared (first use in this function)
+../HD47780.c:48: error: 'LCD_E' undeclared (first use in this function)
+../HD47780.c:54: warning: implicit declaration of function '_delay_us'
+../HD47780.c: In function 'LCD_WriteCommand':
+../HD47780.c:63: error: 'LCD_RS_PORT' undeclared (first use in this function)
+../HD47780.c:63: error: 'LCD_RS' undeclared (first use in this function)
+../HD47780.c: In function 'LCD_WriteData':
+../HD47780.c:73: error: 'LCD_RS_PORT' undeclared (first use in this function)
+../HD47780.c:73: error: 'LCD_RS' undeclared (first use in this function)
+../HD47780.c: In function 'LCD_GoTo':
+../HD47780.c:93: error: 'HD44780_DDRAM_SET' undeclared (first use in this function)
+../HD47780.c: In function 'LCD_Clear':
+../HD47780.c:102: error: 'HD44780_CLEAR' undeclared (first use in this function)
+../HD47780.c:103: warning: implicit declaration of function '_delay_ms'
+../HD47780.c: In function 'LCD_Home':
+../HD47780.c:112: error: 'HD44780_HOME' undeclared (first use in this function)
+../HD47780.c: In function 'LCD_Initalize':
+../HD47780.c:123: error: 'LCD_DB4_DIR' undeclared (first use in this function)
+../HD47780.c:123: error: 'LCD_DB4' undeclared (first use in this function)
+../HD47780.c:124: error: 'LCD_DB5_DIR' undeclared (first use in this function)
+../HD47780.c:124: error: 'LCD_DB5' undeclared (first use in this function)
+../HD47780.c:125: error: 'LCD_DB6_DIR' undeclared (first use in this function)
+../HD47780.c:125: error: 'LCD_DB6' undeclared (first use in this function)
+../HD47780.c:126: error: 'LCD_DB7_DIR' undeclared (first use in this function)
+../HD47780.c:126: error: 'LCD_DB7' undeclared (first use in this function)
+../HD47780.c:127: error: 'LCD_E_DIR' undeclared (first use in this function)
+../HD47780.c:127: error: 'LCD_E' undeclared (first use in this function)
+../HD47780.c:128: error: 'LCD_RS_DIR' undeclared (first use in this function)
+../HD47780.c:128: error: 'LCD_RS' undeclared (first use in this function)
+../HD47780.c:130: error: 'LCD_RS_PORT' undeclared (first use in this function)
+../HD47780.c:131: error: 'LCD_E_PORT' undeclared (first use in this function)
+../HD47780.c:146: error: 'HD44780_FUNCTION_SET' undeclared (first use in this function)
+../HD47780.c:146: error: 'HD44780_FONT5x7' undeclared (first use in this function)
+../HD47780.c:146: error: 'HD44780_TWO_LINE' undeclared (first use in this function)
+../HD47780.c:146: error: 'HD44780_4_BIT' undeclared (first use in this function)
+../HD47780.c:147: error: 'HD44780_DISPLAY_ONOFF' undeclared (first use in this function)
+../HD47780.c:147: error: 'HD44780_DISPLAY_OFF' undeclared (first use in this function)
+../HD47780.c:148: error: 'HD44780_CLEAR' undeclared (first use in this function)
+../HD47780.c:150: error: 'HD44780_ENTRY_MODE' undeclared (first use in this function)
+../HD47780.c:150: error: 'HD44780_EM_SHIFT_CURSOR' undeclared (first use in this function)
+../HD47780.c:150: error: 'HD44780_EM_INCREMENT' undeclared (first use in this function)
+../HD47780.c:151: error: 'HD44780_DISPLAY_ON' undeclared (first use in this function)
+../HD47780.c:151: error: 'HD44780_CURSOR_OFF' undeclared (first use in this function)
+../HD47780.c:151: error: 'HD44780_CURSOR_NOBLINK' undeclared (first use in this function)
+make: *** [HD47780.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:45:52 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../HD44780.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"HD44780.d" -MT"HD44780.o" -c -o "HD44780.o" "../HD44780.c"
+In file included from ../HD44780.h:14,
+                 from ../HD44780.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HD44780.c
+ 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+In file included from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ff.h:21,
+                 from ../diskio.c:10:
+../ffconf.h:21:20: error: #include nested too deeply
+../ffconf.h:30:55: error: #include nested too deeply
+../ffconf.h:33:2: error: #error Wrong configuration file (ffconf.h).
+../ffconf.h:49:20: error: #include nested too deeply
+In file included from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ff.h:21,
+                 from ../diskio.c:10:
+../ffconf.h:52: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'WORD'
+../ffconf.h:53: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DWORD'
+../ffconf.h:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'QWORD'
+../ffconf.h:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'WCHAR'
+../ffconf.h:83: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'FSIZE_t'
+../ffconf.h:84: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'LBA_t'
+../ffconf.h:139: error: expected specifier-qualifier-list before 'WORD'
+../ffconf.h:185: error: expected specifier-qualifier-list before 'WORD'
+../ffconf.h:210: error: expected specifier-qualifier-list before 'FSIZE_t'
+../ffconf.h:231: error: expected specifier-qualifier-list before 'DWORD'
+../ffconf.h:249: error: expected specifier-qualifier-list before 'FSIZE_t'
+../ffconf.h:270: error: expected specifier-qualifier-list before 'DWORD'
+../ffconf.h:309: error: expected declaration specifiers or '...' before 'FSIZE_t'
+../ffconf.h:326: error: expected declaration specifiers or '...' before 'DWORD'
+../ffconf.h:327: error: expected declaration specifiers or '...' before 'DWORD'
+../ffconf.h:330: error: expected declaration specifiers or '...' before 'FSIZE_t'
+../ffconf.h:333: warning: type defaults to 'int' in declaration of 'LBA_t'
+../ffconf.h:333: error: expected ';', ',' or ')' before 'ptbl'
+../ffconf.h:334: error: expected ')' before 'cp'
+../ffconf.h:357: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'get_fattime'
+In file included from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ff.h:21,
+                 from ../diskio.h:5,
+                 from ../diskio.c:11:
+../ffconf.h:21:20: error: #include nested too deeply
+In file included from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../diskio.h:6,
+                 from ../diskio.c:11:
+../ffconf.h:21:20: error: #include nested too deeply
+In file included from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ff.h:21,
+                 from ../mmc_avr.h:8,
+                 from ../diskio.h:7,
+                 from ../diskio.c:11:
+../ffconf.h:21:20: error: #include nested too deeply
+In file included from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ff.h:21,
+                 from ../diskio.h:5,
+                 from ../mmc_avr.h:9,
+                 from ../diskio.h:7,
+                 from ../diskio.c:11:
+../ffconf.h:21:20: error: #include nested too deeply
+In file included from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../diskio.h:6,
+                 from ../mmc_avr.h:9,
+                 from ../diskio.h:7,
+                 from ../diskio.c:11:
+../ffconf.h:21:20: error: #include nested too deeply
+In file included from ../mmc_avr.h:9,
+                 from ../diskio.h:7,
+                 from ../diskio.c:11:
+../diskio.h:34: error: expected specifier-qualifier-list before 'WORD'
+../diskio.h:46: error: expected declaration specifiers or '...' before 'LBA_t'
+../diskio.h:47: error: expected declaration specifiers or '...' before 'LBA_t'
+In file included from ../diskio.h:7,
+                 from ../diskio.c:11:
+../mmc_avr.h:21: error: expected declaration specifiers or '...' before 'LBA_t'
+../mmc_avr.h:22: error: expected declaration specifiers or '...' before 'LBA_t'
+In file included from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../ffconf.h:21,
+                 from ../diskio.c:12:
+../ffconf.h:21:20: error: #include nested too deeply
+../diskio.c:85: error: expected declaration specifiers or '...' before 'LBA_t'
+../diskio.c: In function 'disk_read':
+../diskio.c:104: error: 'sector' undeclared (first use in this function)
+../diskio.c:104: error: (Each undeclared identifier is reported only once
+../diskio.c:104: error: for each function it appears in.)
+../diskio.c:104: error: too many arguments to function 'mmc_disk_read'
+../diskio.c: At top level:
+../diskio.c:118: error: expected declaration specifiers or '...' before 'LBA_t'
+../diskio.c: In function 'disk_write':
+../diskio.c:136: error: 'sector' undeclared (first use in this function)
+../diskio.c:136: error: too many arguments to function 'mmc_disk_write'
+make: *** [diskio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:46:27 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../HD44780.h:14,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_FAT_SMALL.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_FAT_SMALL.map -mmcu=atmega16 -o "SD_FAT_SMALL.elf"  ./HD44780.o ./diskio.o ./ff.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_FAT_SMALL.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_FAT_SMALL.elf  >"SD_FAT_SMALL.lss"
+Finished building: SD_FAT_SMALL.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   47472 bytes (289.7% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (96.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:47:25 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building target: SD_FAT_SMALL.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_FAT_SMALL.map -mmcu=atmega16 -o "SD_FAT_SMALL.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_FAT_SMALL.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_FAT_SMALL.elf  >"SD_FAT_SMALL.lss"
+Finished building: SD_FAT_SMALL.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   47472 bytes (289.7% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (96.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:47:45 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   47472 bytes (289.7% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (96.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:48:38 **** Clean-only build of configuration Debug for project SD_FAT_SMALL ****
+make clean 
+rm -rf  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o  sizedummy  SD_FAT_SMALL.lss  ./HD44780.d ./diskio.d ./ff.d ./ffunicode_avr.d ./main.d ./mmc_avr_spi.d  SD_FAT_SMALL.elf
+ 
+23:48:38 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../HD44780.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HD44780.d" -MT"HD44780.o" -c -o "HD44780.o" "../HD44780.c"
+In file included from ../HD44780.h:14,
+                 from ../HD44780.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HD44780.c
+ 
+Building file: ../diskio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"diskio.d" -MT"diskio.o" -c -o "diskio.o" "../diskio.c"
+Finished building: ../diskio.c
+ 
+Building file: ../ff.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ff.d" -MT"ff.o" -c -o "ff.o" "../ff.c"
+Finished building: ../ff.c
+ 
+Building file: ../ffunicode_avr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ffunicode_avr.d" -MT"ffunicode_avr.o" -c -o "ffunicode_avr.o" "../ffunicode_avr.c"
+Finished building: ../ffunicode_avr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../HD44780.h:14,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building file: ../mmc_avr_spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"mmc_avr_spi.d" -MT"mmc_avr_spi.o" -c -o "mmc_avr_spi.o" "../mmc_avr_spi.c"
+Finished building: ../mmc_avr_spi.c
+ 
+Building target: SD_FAT_SMALL.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_FAT_SMALL.map -mmcu=atmega32 -o "SD_FAT_SMALL.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_FAT_SMALL.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_FAT_SMALL.elf  >"SD_FAT_SMALL.lss"
+Finished building: SD_FAT_SMALL.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   47472 bytes (144.9% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:53:01 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   47472 bytes (144.9% Full)
+(.text + .data + .bootloader)
+
+Data:        984 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:59:56 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../HD44780.h:14,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_FAT_SMALL.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_FAT_SMALL.map -mmcu=atmega32 -o "SD_FAT_SMALL.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_FAT_SMALL.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_FAT_SMALL.elf  >"SD_FAT_SMALL.lss"
+Finished building: SD_FAT_SMALL.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   47576 bytes (145.2% Full)
+(.text + .data + .bootloader)
+
+Data:        996 bytes (48.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:02:35 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   47576 bytes (145.2% Full)
+(.text + .data + .bootloader)
+
+Data:        996 bytes (48.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:04:43 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../HD44780.h:14,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_FAT_SMALL.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_FAT_SMALL.map -mmcu=atmega32 -o "SD_FAT_SMALL.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_FAT_SMALL.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_FAT_SMALL.elf  >"SD_FAT_SMALL.lss"
+Finished building: SD_FAT_SMALL.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   47576 bytes (145.2% Full)
+(.text + .data + .bootloader)
+
+Data:        996 bytes (48.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:20:29 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../HD44780.h:14,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_FAT_SMALL.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_FAT_SMALL.map -mmcu=atmega32 -o "SD_FAT_SMALL.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_FAT_SMALL.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_FAT_SMALL.elf  >"SD_FAT_SMALL.lss"
+Finished building: SD_FAT_SMALL.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   47638 bytes (145.4% Full)
+(.text + .data + .bootloader)
+
+Data:       1008 bytes (49.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:20:56 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../HD44780.h:14,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:136: warning: unused variable 'a'
+../main.c:134: warning: unused variable 'fr'
+../main.c:127: warning: unused variable 'text'
+../main.c: At top level:
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_FAT_SMALL.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_FAT_SMALL.map -mmcu=atmega32 -o "SD_FAT_SMALL.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_FAT_SMALL.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_FAT_SMALL.elf  >"SD_FAT_SMALL.lss"
+Finished building: SD_FAT_SMALL.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   44662 bytes (136.3% Full)
+(.text + .data + .bootloader)
+
+Data:        904 bytes (44.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:21:12 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../HD44780.h:14,
+                 from ../main.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:73: warning: 'scan_files' defined but not used
+Finished building: ../main.c
+ 
+Building target: SD_FAT_SMALL.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SD_FAT_SMALL.map -mmcu=atmega32 -o "SD_FAT_SMALL.elf"  ./HD44780.o ./diskio.o ./ff.o ./ffunicode_avr.o ./main.o ./mmc_avr_spi.o   
+Finished building target: SD_FAT_SMALL.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SD_FAT_SMALL.elf  >"SD_FAT_SMALL.lss"
+Finished building: SD_FAT_SMALL.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   47638 bytes (145.4% Full)
+(.text + .data + .bootloader)
+
+Data:       1008 bytes (49.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:21:27 **** Incremental Build of configuration Debug for project SD_FAT_SMALL ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SD_FAT_SMALL.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   47638 bytes (145.4% Full)
+(.text + .data + .bootloader)
+
+Data:       1008 bytes (49.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

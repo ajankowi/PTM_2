@@ -1,0 +1,20 @@
+22:11:26 **** Incremental Build of configuration Release for project Wyswietlacz ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Wyswietlacz.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2552 bytes (7.8% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:11:26 Build Finished. 0 errors, 0 warnings. (took 270ms)
+
